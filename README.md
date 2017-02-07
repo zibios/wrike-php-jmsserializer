@@ -25,6 +25,7 @@ Project status
 [![Scrutinizer Code Quality](https://scrutinizer-ci.com/g/zibios/wrike-php-jmsserializer/badges/quality-score.png?b=master)](https://scrutinizer-ci.com/g/zibios/wrike-php-jmsserializer/?branch=master)
 [![SensioLabsInsight](https://insight.sensiolabs.com/projects/c5257b55-3b63-4739-9e91-2f231d189691/mini.png)](https://insight.sensiolabs.com/projects/c5257b55-3b63-4739-9e91-2f231d189691)
 [![Codacy Badge](https://api.codacy.com/project/badge/Grade/8d37c4ffd44647dba3f4e82dae223481)](https://www.codacy.com/app/zibios/wrike-php-jmsserializer)
+[![Test Coverage](https://codeclimate.com/github/zibios/wrike-php-jmsserializer/badges/coverage.svg)](https://codeclimate.com/github/zibios/wrike-php-jmsserializer/coverage)
 [![Build Status](https://travis-ci.org/zibios/wrike-php-jmsserializer.svg?branch=master)](https://travis-ci.org/zibios/wrike-php-jmsserializer)
 [![Dependency Status](https://www.versioneye.com/user/projects/5899f1afc71294003d853b1f/badge.svg?style=flat-square)](https://www.versioneye.com/user/projects/5899f1afc71294003d853b1f)
 

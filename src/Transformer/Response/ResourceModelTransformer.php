@@ -24,7 +24,7 @@ class ResourceModelTransformer extends AbstractResponseTransformer
      * @param ResponseInterface $response
      * @param string $resourceClass
      *
-     * @return array|ResourceModelInterface[]
+     * @return array|ResourceModelInterface[]|null
      * @throws \InvalidArgumentException
      * @throws \RuntimeException
      */
