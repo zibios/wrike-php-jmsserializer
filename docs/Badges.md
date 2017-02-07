@@ -21,19 +21,19 @@ Collection of all badges for package
 [![Libraries.io](https://img.shields.io/librariesio/github/zibios/wrike-php-jmsserializer.svg)](https://libraries.io/packagist/zibios%2Fwrike-php-jmsserializer)
 
 **VersionEye**
-[![Dependency Status](https://www.versioneye.com/user/projects/{ToDo}/badge.svg?style=flat-square)](https://www.versioneye.com/user/projects/{ToDo})
+[![Dependency Status](https://www.versioneye.com/user/projects/5899f1afc71294003d853b1f/badge.svg?style=flat-square)](https://www.versioneye.com/user/projects/5899f1afc71294003d853b1f)
 
 **Travis**
 [![Build Status](https://travis-ci.org/zibios/wrike-php-jmsserializer.svg?branch=master)](https://travis-ci.org/zibios/wrike-php-jmsserializer)
 
 **SensioLabs Insight**
-[![SensioLabsInsight](https://insight.sensiolabs.com/projects/{ToDo}/mini.png)](https://insight.sensiolabs.com/projects/{ToDo}f)
-[![SensioLabs Insight](https://img.shields.io/sensiolabs/i/{ToDo}.svg)](https://insight.sensiolabs.com/projects/{ToDo})
+[![SensioLabsInsight](https://insight.sensiolabs.com/projects/c5257b55-3b63-4739-9e91-2f231d189691/mini.png)](https://insight.sensiolabs.com/projects/c5257b55-3b63-4739-9e91-2f231d189691)
+[![SensioLabs Insight](https://img.shields.io/sensiolabs/i/c5257b55-3b63-4739-9e91-2f231d189691.svg)](https://insight.sensiolabs.com/projects/c5257b55-3b63-4739-9e91-2f231d189691)
 
 **Codacy**
-[![Codacy Badge](https://api.codacy.com/project/badge/Grade/{ToDo})](https://www.codacy.com/app/zibios/wrike-php-jmsserializer)
-[![Codacy grade](https://img.shields.io/codacy/grade/{ToDo}.svg)](https://www.codacy.com/app/zibios/wrike-php-jmsserializer)
-[![Codacy coverage](https://img.shields.io/codacy/coverage/{ToDo}.svg)](https://www.codacy.com/app/zibios/wrike-php-jmsserializer)
+[![Codacy Badge](https://api.codacy.com/project/badge/Grade/8d37c4ffd44647dba3f4e82dae223481)](https://www.codacy.com/app/zibios/wrike-php-jmsserializer)
+[![Codacy grade](https://img.shields.io/codacy/grade/8d37c4ffd44647dba3f4e82dae223481.svg)](https://www.codacy.com/app/zibios/wrike-php-jmsserializer)
+[![Codacy coverage](https://img.shields.io/codacy/coverage/8d37c4ffd44647dba3f4e82dae223481.svg)](https://www.codacy.com/app/zibios/wrike-php-jmsserializer)
 
 **Code Climate**
 [![Code Climate](https://codeclimate.com/github/zibios/wrike-php-jmsserializer/badges/gpa.svg)](https://codeclimate.com/github/zibios/wrike-php-jmsserializer)

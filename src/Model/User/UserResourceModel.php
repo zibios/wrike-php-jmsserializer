@@ -10,7 +10,6 @@
 
 namespace Zibios\WrikePhpJmsserializer\Model\User;
 
-use JMS\Serializer\Annotation as SA;
 use Zibios\WrikePhpJmsserializer\Model\Contact\ContactResourceModel;
 use Zibios\WrikePhpJmsserializer\Model\ResourceModelInterface;
 
