@@ -48,6 +48,7 @@ abstract class ResponseTransformerTestCase extends TestCase
             [$responseMock, ContactResource::class, true],
             [$stdClass, ContactResource::class, false],
             ['', ContactResource::class, false],
+            [$responseMock, 'wrong_class', false],
         ];
     }
 
@@ -79,5 +80,24 @@ abstract class ResponseTransformerTestCase extends TestCase
         if ($isValid === true) {
             self::assertFalse($exceptionOccurred, sprintf('Exception should not be thrown, "%s" "%s" occurred', $exceptionClass, $exceptionMessage));
         }
+    }
+
+    /**
+     * @expectedException \InvalidArgumentException
+     */
+    public function test_wrongResourceClassParam()
+    {
+        $responseArray = ['key' => 'value', 'number' => 100];
+        $responseString = json_encode($responseArray);
+        $bodyMock = $this->getMockForAbstractClass(StreamInterface::class);
+        $bodyMock->expects(self::any())
+            ->method('getContents')
+            ->willReturn($responseString);
+        $responseMock = $this->getMockForAbstractClass(ResponseInterface::class);
+        $responseMock->expects(self::any())
+            ->method('getBody')
+            ->willReturn($bodyMock);
+
+        $this->object->transform($responseMock, 'wrong class');
     }
 }

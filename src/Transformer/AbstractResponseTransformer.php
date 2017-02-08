@@ -65,10 +65,6 @@ abstract class AbstractResponseTransformer extends BaseAbstractResponseTransform
             throw new \InvalidArgumentException(sprintf('"%s" class not supported', $resourceClass));
         }
 
-        if (class_exists($resourceClass) === false) {
-            throw new \InvalidArgumentException(sprintf('"%s" class not exist', $resourceClass));
-        }
-
         return $this->getModelClasses()[$resourceClass];
     }
 }
