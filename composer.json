@@ -1,13 +1,4 @@
 {
-    "repositories": [
-        {
-            "type": "path",
-            "url": "../wrike-php-*",
-            "options": {
-                "symlink": false
-            }
-        }
-    ],
     "name": "zibios/wrike-php-jmsserializer",
     "description": "Response transformer adapter for Wrike PHP Library, based on JMS Serializer package.",
     "keywords": ["wrike", "wrike.com", "api", "sdk", "library", "jmsserializer", "php"],
