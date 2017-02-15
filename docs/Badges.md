@@ -35,3 +35,9 @@ Collection of all badges for package
 **Code Climate**
 [![Code Climate](https://codeclimate.com/github/zibios/wrike-php-jmsserializer/badges/gpa.svg)](https://codeclimate.com/github/zibios/wrike-php-jmsserializer)
 [![Test Coverage](https://codeclimate.com/github/zibios/wrike-php-jmsserializer/badges/coverage.svg)](https://codeclimate.com/github/zibios/wrike-php-jmsserializer/coverage)
+
+**HHVM**
+[![HHVM Status](http://hhvm.h4cc.de/badge/zibios/wrike-php-jmsserializer.svg)](http://hhvm.h4cc.de/package/zibios/wrike-php-jmsserializer)
+
+**Coveralls**
+[![Coverage Status](https://coveralls.io/repos/github/zibios/wrike-php-jmsserializer/badge.svg)](https://coveralls.io/github/zibios/wrike-php-jmsserializer)
