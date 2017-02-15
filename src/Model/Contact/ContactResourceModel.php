@@ -18,6 +18,8 @@ use Zibios\WrikePhpLibrary\Model\Contact\ContactResourceModel as BaseContactReso
 
 /**
  * Contact Resource Model
+ *
+ * @SuppressWarnings(PHPMD.TooManyFields)
  */
 class ContactResourceModel extends BaseContactResourceModel implements ResourceModelInterface
 {
