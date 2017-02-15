@@ -20,9 +20,6 @@ Collection of all badges for package
 **Libraries.io**
 [![Libraries.io](https://img.shields.io/librariesio/github/zibios/wrike-php-jmsserializer.svg)](https://libraries.io/packagist/zibios%2Fwrike-php-jmsserializer)
 
-**VersionEye**
-[![Dependency Status](https://www.versioneye.com/user/projects/5899f1afc71294003d853b1f/badge.svg?style=flat-square)](https://www.versioneye.com/user/projects/5899f1afc71294003d853b1f)
-
 **Travis**
 [![Build Status](https://travis-ci.org/zibios/wrike-php-jmsserializer.svg?branch=master)](https://travis-ci.org/zibios/wrike-php-jmsserializer)
 
