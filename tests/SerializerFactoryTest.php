@@ -1,6 +1,7 @@
 <?php
-/**
- * This file is part of the WrikePhpSdk package.
+
+/*
+ * This file is part of the zibios/wrike-php-jmsserializer package.
  *
  * (c) Zbigniew Ślązak
  *
@@ -15,7 +16,7 @@ use JMS\Serializer\SerializerInterface;
 use Zibios\WrikePhpJmsserializer\SerializerFactory;
 
 /**
- * Serializer Factory Test
+ * Serializer Factory Test.
  */
 class SerializerFactoryTest extends TestCase
 {

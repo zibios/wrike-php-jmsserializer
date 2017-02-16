@@ -1,6 +1,7 @@
 <?php
-/**
- * This file is part of the WrikePhpLibrary package.
+
+/*
+ * This file is part of the zibios/wrike-php-jmsserializer package.
  *
  * (c) Zbigniew Ślązak
  *
@@ -13,9 +14,8 @@ namespace Zibios\WrikePhpJmsserializer\Model;
 use Zibios\WrikePhpLibrary\Model\ResourceModelInterface as BaseResourceModelInterface;
 
 /**
- * Resource Model Interface
+ * Resource Model Interface.
  */
 interface ResourceModelInterface extends BaseResourceModelInterface
 {
-
 }

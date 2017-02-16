@@ -1,6 +1,7 @@
 <?php
-/**
- * This file is part of the WrikePhpJmsserializer package.
+
+/*
+ * This file is part of the zibios/wrike-php-jmsserializer package.
  *
  * (c) Zbigniew Ślązak
  *
@@ -14,9 +15,8 @@ use Zibios\WrikePhpJmsserializer\Model\Contact\ContactResourceModel;
 use Zibios\WrikePhpJmsserializer\Model\ResourceModelInterface;
 
 /**
- * User Resource Model
+ * User Resource Model.
  */
 class UserResourceModel extends ContactResourceModel implements ResourceModelInterface
 {
-
 }

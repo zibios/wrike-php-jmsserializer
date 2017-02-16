@@ -1,6 +1,7 @@
 <?php
-/**
- * This file is part of the WrikePhpJmsserializer package.
+
+/*
+ * This file is part of the zibios/wrike-php-jmsserializer package.
  *
  * (c) Zbigniew Ślązak
  *
@@ -15,24 +16,26 @@ use Zibios\WrikePhpJmsserializer\Model\ResourceModelInterface;
 use Zibios\WrikePhpLibrary\Model\Common\AvatarModel as BaseAvatarModel;
 
 /**
- * Avatar Model
+ * Avatar Model.
  */
 class AvatarModel extends BaseAvatarModel implements ResourceModelInterface
 {
     /**
-     * Group letters (2 symbols max), ex. ZS
+     * Group letters (2 symbols max), ex. ZS.
      *
      * @SA\Type("string")
      * @SA\SerializedName("letters")
+     *
      * @var string|null
      */
     protected $letters;
 
     /**
-     * Hex color code, ex. #fe73a1
+     * Hex color code, ex. #fe73a1.
      *
      * @SA\Type("string")
      * @SA\SerializedName("color")
+     *
      * @var string|null
      */
     protected $color;

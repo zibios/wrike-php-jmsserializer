@@ -1,6 +1,7 @@
 <?php
-/**
- * This file is part of the WrikePhpJmsserializer package.
+
+/*
+ * This file is part of the zibios/wrike-php-jmsserializer package.
  *
  * (c) Zbigniew Ślązak
  *
@@ -22,7 +23,7 @@ use Zibios\WrikePhpLibrary\Resource\UserResource;
 use Zibios\WrikePhpLibrary\Transformer\AbstractResponseTransformer as BaseAbstractResponseTransformer;
 
 /**
- * Response Transformer Abstract
+ * Response Transformer Abstract.
  */
 abstract class AbstractResponseTransformer extends BaseAbstractResponseTransformer
 {
@@ -36,7 +37,8 @@ abstract class AbstractResponseTransformer extends BaseAbstractResponseTransform
      *
      * @param SerializerInterface $serializer
      */
-    public function __construct(SerializerInterface $serializer) {
+    public function __construct(SerializerInterface $serializer)
+    {
         $this->serializer = $serializer;
     }
 
@@ -56,8 +58,9 @@ abstract class AbstractResponseTransformer extends BaseAbstractResponseTransform
     /**
      * @param string $resourceClass
      *
-     * @return string
      * @throws \InvalidArgumentException
+     *
+     * @return string
      */
     protected function getModelClassForResource($resourceClass)
     {

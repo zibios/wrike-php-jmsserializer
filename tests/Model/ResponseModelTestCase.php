@@ -1,6 +1,7 @@
 <?php
-/**
- * This file is part of the WrikePhpJmsserializer package.
+
+/*
+ * This file is part of the zibios/wrike-php-jmsserializer package.
  *
  * (c) Zbigniew Ślązak
  *
@@ -14,7 +15,7 @@ use Zibios\WrikePhpJmsserializer\Model\ResponseModelInterface;
 use Zibios\WrikePhpJmsserializer\Tests\TestCase;
 
 /**
- * Response Model Test Case
+ * Response Model Test Case.
  */
 abstract class ResponseModelTestCase extends TestCase
 {
@@ -45,7 +46,7 @@ abstract class ResponseModelTestCase extends TestCase
     }
 
     /**
-     * Test exception inheritance
+     * Test exception inheritance.
      */
     public function test_ExtendProperClasses()
     {
@@ -53,7 +54,7 @@ abstract class ResponseModelTestCase extends TestCase
     }
 
     /**
-     * Test properties methods
+     * Test properties methods.
      */
     public function test_properPropertiesMethods()
     {
@@ -66,7 +67,7 @@ abstract class ResponseModelTestCase extends TestCase
     }
 
     /**
-     * Test properties methods
+     * Test properties methods.
      */
     public function test_getSetMethods()
     {

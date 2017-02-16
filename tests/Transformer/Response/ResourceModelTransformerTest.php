@@ -1,6 +1,7 @@
 <?php
-/**
- * This file is part of the WrikePhpJmsserializer package.
+
+/*
+ * This file is part of the zibios/wrike-php-jmsserializer package.
  *
  * (c) Zbigniew Ślązak
  *
@@ -25,21 +26,17 @@ use Zibios\WrikePhpLibrary\Resource\InvitationResource;
 use Zibios\WrikePhpLibrary\Resource\UserResource;
 
 /**
- * Resource Model Transformer Test
+ * Resource Model Transformer Test.
  */
 class ResourceModelTransformerTest extends ResponseTransformerTestCase
 {
     const VALID_ID = 'valid_id';
 
-    /**
-     *
-     */
     public function setUp()
     {
         $serializer = SerializerFactory::createSerializer();
         $this->object = new ResourceModelTransformer($serializer);
     }
-
 
     /**
      * @return array
@@ -56,7 +53,6 @@ class ResourceModelTransformerTest extends ResponseTransformerTestCase
     }
 
     /**
-     *
      * @dataProvider normalizeInstancesProvider
      *
      * @param mixed $resourceClass

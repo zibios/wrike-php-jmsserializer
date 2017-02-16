@@ -1,6 +1,7 @@
 <?php
-/**
- * This file is part of the WrikePhpJmsserializer package.
+
+/*
+ * This file is part of the zibios/wrike-php-jmsserializer package.
  *
  * (c) Zbigniew Ślązak
  *
@@ -15,24 +16,26 @@ use Zibios\WrikePhpJmsserializer\Model\ResponseModelInterface;
 use Zibios\WrikePhpLibrary\Model\Contact\ContactResponseModel as BaseContactResponseModel;
 
 /**
- * Contact Response Model
+ * Contact Response Model.
  */
 class ContactResponseModel extends BaseContactResponseModel implements ResponseModelInterface
 {
     /**
-     * Kind of response
+     * Kind of response.
      *
      * @SA\Type("string")
      * @SA\SerializedName("kind")
+     *
      * @var string|null
      */
     protected $kind;
 
     /**
-     * Collection of response models
+     * Collection of response models.
      *
      * @SA\Type("array<Zibios\WrikePhpJmsserializer\Model\Contact\ContactResourceModel>")
      * @SA\SerializedName("data")
+     *
      * @var array|ContactResourceModel]|null
      */
     protected $data;

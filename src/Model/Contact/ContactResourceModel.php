@@ -1,6 +1,7 @@
 <?php
-/**
- * This file is part of the WrikePhpJmsserializer package.
+
+/*
+ * This file is part of the zibios/wrike-php-jmsserializer package.
  *
  * (c) Zbigniew Ślązak
  *
@@ -17,114 +18,126 @@ use Zibios\WrikePhpJmsserializer\Model\ResourceModelInterface;
 use Zibios\WrikePhpLibrary\Model\Contact\ContactResourceModel as BaseContactResourceModel;
 
 /**
- * Contact Resource Model
+ * Contact Resource Model.
  *
  * @SuppressWarnings(PHPMD.TooManyFields)
  */
 class ContactResourceModel extends BaseContactResourceModel implements ResourceModelInterface
 {
     /**
-     * Contact ID
+     * Contact ID.
      *
      * Comment: Contact ID
      *
      * @SA\Type("string")
      * @SA\SerializedName("id")
+     *
      * @var string|null
      */
     protected $id;
 
     /**
-     * First name
+     * First name.
      *
      * @SA\Type("string")
      * @SA\SerializedName("firstName")
+     *
      * @var string|null
      */
     protected $firstName;
 
     /**
-     * Last name
+     * Last name.
      *
      * @SA\Type("string")
      * @SA\SerializedName("lastName")
+     *
      * @var string|null
      */
     protected $lastName;
 
     /**
-     * Type of the user
+     * Type of the user.
      *
      * Enum: Person, Group
+     *
      * @see \Zibios\WrikePhpLibrary\Enum\UserTypeEnum
      *
      * @SA\Type("string")
      * @SA\SerializedName("type")
+     *
      * @var string|null
      */
     protected $type;
 
     /**
-     * List of user profiles in accounts accessible for requesting user
+     * List of user profiles in accounts accessible for requesting user.
      *
      * @SA\Type("array<Zibios\WrikePhpJmsserializer\Model\Common\UserProfileModel>")
      * @SA\SerializedName("profiles")
+     *
      * @var array|UserProfileModel[]|null
      */
     protected $profiles;
 
     /**
-     * Avatar URL
+     * Avatar URL.
      *
      * @SA\Type("string")
      * @SA\SerializedName("avatarUrl")
+     *
      * @var string|null
      */
     protected $avatarUrl;
 
     /**
-     * Timezone Id, e.g 'America/New_York'
+     * Timezone Id, e.g 'America/New_York'.
      *
      * @SA\Type("string")
      * @SA\SerializedName("timezone")
+     *
      * @var string|null
      */
     protected $timezone;
 
     /**
-     * Locale
+     * Locale.
      *
      * @SA\Type("string")
      * @SA\SerializedName("locale")
+     *
      * @var string|null
      */
     protected $locale;
 
     /**
-     * True if user is deleted, false otherwise
+     * True if user is deleted, false otherwise.
      *
      * @SA\Type("boolean")
      * @SA\SerializedName("deleted")
+     *
      * @var bool|null
      */
     protected $deleted;
 
     /**
-     * Field is present and set to true only for requesting user
+     * Field is present and set to true only for requesting user.
      *
      * @SA\Type("boolean")
      * @SA\SerializedName("me")
+     *
      * @var bool|null
      */
     protected $me;
 
     /**
-     * List of group members contact IDs (field is present only for groups)
+     * List of group members contact IDs (field is present only for groups).
      *
      * Comment: Contact ID array
      *
      * @SA\Type("array<string>")
      * @SA\SerializedName("memberIds")
+     *
      * @var array|string[]|null
      */
     protected $memberIds;
@@ -139,61 +152,67 @@ class ContactResourceModel extends BaseContactResourceModel implements ResourceM
      *
      * @SA\Type("array<Zibios\WrikePhpJmsserializer\Model\Common\MetadataModel>")
      * @SA\SerializedName("metadata")
+     *
      * @var array|MetadataModel[]|null
      */
     protected $metadata;
 
     /**
-     * Field is present and set to true for My Team (default) group
+     * Field is present and set to true for My Team (default) group.
      *
      * Comment: Optional
      *
      * @SA\Type("boolean")
      * @SA\SerializedName("myTeam")
+     *
      * @var bool|null
      */
     protected $myTeam;
 
     /**
-     * User Title
+     * User Title.
      *
      * Comment: Optional
      *
      * @SA\Type("string")
      * @SA\SerializedName("title")
+     *
      * @var string|null
      */
     protected $title;
 
     /**
-     * User Company Name
+     * User Company Name.
      *
      * Comment: Optional
      *
      * @SA\Type("string")
      * @SA\SerializedName("companyName")
+     *
      * @var string|null
      */
     protected $companyName;
 
     /**
-     * User phone
+     * User phone.
      *
      * Comment: Optional
      *
      * @SA\Type("string")
      * @SA\SerializedName("phone")
+     *
      * @var string|null
      */
     protected $phone;
 
     /**
-     * User location
+     * User location.
      *
      * Comment: Optional
      *
      * @SA\Type("string")
      * @SA\SerializedName("location")
+     *
      * @var string|null
      */
     protected $location;

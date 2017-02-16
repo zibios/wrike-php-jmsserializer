@@ -1,6 +1,7 @@
 <?php
-/**
- * This file is part of the WrikePhpJmsserializer package.
+
+/*
+ * This file is part of the zibios/wrike-php-jmsserializer package.
  *
  * (c) Zbigniew Ślązak
  *
@@ -18,33 +19,29 @@ use Zibios\WrikePhpJmsserializer\Model\Group\GroupResourceModel;
 use Zibios\WrikePhpJmsserializer\Model\Group\GroupResponseModel;
 use Zibios\WrikePhpJmsserializer\Model\Invitation\InvitationResourceModel;
 use Zibios\WrikePhpJmsserializer\Model\Invitation\InvitationResponseModel;
+use Zibios\WrikePhpJmsserializer\Model\ResponseModelInterface;
 use Zibios\WrikePhpJmsserializer\Model\User\UserResourceModel;
 use Zibios\WrikePhpJmsserializer\Model\User\UserResponseModel;
-use Zibios\WrikePhpJmsserializer\Model\ResponseModelInterface;
-use Zibios\WrikePhpJmsserializer\Transformer\Response\ResponseModelTransformer;
 use Zibios\WrikePhpJmsserializer\SerializerFactory;
 use Zibios\WrikePhpJmsserializer\Tests\Transformer\ResponseTransformerTestCase;
+use Zibios\WrikePhpJmsserializer\Transformer\Response\ResponseModelTransformer;
 use Zibios\WrikePhpLibrary\Resource\ContactResource;
 use Zibios\WrikePhpLibrary\Resource\GroupResource;
 use Zibios\WrikePhpLibrary\Resource\InvitationResource;
 use Zibios\WrikePhpLibrary\Resource\UserResource;
 
 /**
- * Response Model Transformer Test
+ * Response Model Transformer Test.
  */
 class ResponseModelTransformerTest extends ResponseTransformerTestCase
 {
     const VALID_ID = 'valid_id';
 
-    /**
-     *
-     */
     public function setUp()
     {
         $serializer = SerializerFactory::createSerializer();
         $this->object = new ResponseModelTransformer($serializer);
     }
-
 
     /**
      * @return array

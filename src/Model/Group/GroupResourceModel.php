@@ -1,6 +1,7 @@
 <?php
-/**
- * This file is part of the WrikePhpJmsserializer package.
+
+/*
+ * This file is part of the zibios/wrike-php-jmsserializer package.
  *
  * (c) Zbigniew Ślązak
  *
@@ -16,91 +17,99 @@ use Zibios\WrikePhpJmsserializer\Model\ResourceModelInterface;
 use Zibios\WrikePhpLibrary\Model\Group\GroupResourceModel as BaseGroupResourceModel;
 
 /**
- * Group Resource Model
+ * Group Resource Model.
  */
 class GroupResourceModel extends BaseGroupResourceModel implements ResourceModelInterface
 {
     /**
-     * Contact ID
+     * Contact ID.
      *
      * Comment: Contact ID
      *
      * @SA\Type("string")
      * @SA\SerializedName("id")
+     *
      * @var string|null
      */
     protected $id;
 
     /**
-     * Account ID
+     * Account ID.
      *
      * Comment: Account ID
      *
      * @SA\Type("string")
      * @SA\SerializedName("accountId")
+     *
      * @var string|null
      */
     protected $accountId;
 
     /**
-     * Group Title
+     * Group Title.
      *
      * @SA\Type("string")
      * @SA\SerializedName("title")
+     *
      * @var string|null
      */
     protected $title;
 
     /**
-     * List of group members user IDs
+     * List of group members user IDs.
      *
      * Comment: Contact ID list
      *
      * @SA\Type("array<string>")
      * @SA\SerializedName("memberIds")
+     *
      * @var array|string[]|null
      */
     protected $memberIds;
 
     /**
-     * List of child group IDs
+     * List of child group IDs.
      *
      * Comment: Contact ID list
      *
      * @SA\Type("array<string>")
      * @SA\SerializedName("childIds")
+     *
      * @var array|string[]|null
      */
     protected $childIds;
 
     /**
-     * List of parent group IDs
+     * List of parent group IDs.
      *
      * Comment: Contact ID list
      *
      * @SA\Type("array<string>")
      * @SA\SerializedName("parentIds")
+     *
      * @var array|string[]|null
      */
     protected $parentIds;
 
     /**
-     * Avatar URL
+     * Avatar URL.
      *
      * @SA\Type("string")
      * @SA\SerializedName("avatarUrl")
+     *
      * @var string|null
      */
     protected $avatarUrl;
 
     /**
      * Field is present and set to true for My Team (default) group
-     * Optional
+     * Optional.
      *
      * Comment: Optional
      *
      * @SA\Type("boolean")
      * @SA\SerializedName("myTeam")
+     *
      * @var bool|null
      */
     protected $myTeam;
@@ -109,12 +118,13 @@ class GroupResourceModel extends BaseGroupResourceModel implements ResourceModel
      * List of group metadata entries
      * Metadata entry key-value pair
      * Metadata entries are isolated on per-client (application) basis
-     * Optional
+     * Optional.
      *
      * Comment: Optional
      *
      * @SA\Type("array<Zibios\WrikePhpJmsserializer\MetadataModel\Common\MetadataMetadataModel>")
      * @SA\SerializedName("metadata")
+     *
      * @var array|MetadataModel[]|null
      */
     protected $metadata;

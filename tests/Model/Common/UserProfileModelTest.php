@@ -1,6 +1,7 @@
 <?php
-/**
- * This file is part of the WrikePhpJmsserializer package.
+
+/*
+ * This file is part of the zibios/wrike-php-jmsserializer package.
  *
  * (c) Zbigniew Ślązak
  *
@@ -14,7 +15,7 @@ use Zibios\WrikePhpJmsserializer\Model\Common\UserProfileModel;
 use Zibios\WrikePhpJmsserializer\Tests\Model\ResourceModelTestCase;
 
 /**
- * User Profile Model Test
+ * User Profile Model Test.
  */
 class UserProfileModelTest extends ResourceModelTestCase
 {

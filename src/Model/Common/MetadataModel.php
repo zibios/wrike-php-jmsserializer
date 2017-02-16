@@ -1,6 +1,7 @@
 <?php
-/**
- * This file is part of the WrikePhpJmsserializer package.
+
+/*
+ * This file is part of the zibios/wrike-php-jmsserializer package.
  *
  * (c) Zbigniew Ślązak
  *
@@ -15,25 +16,27 @@ use Zibios\WrikePhpJmsserializer\Model\ResourceModelInterface;
 use Zibios\WrikePhpLibrary\Model\Common\MetadataModel as BaseMetadataModel;
 
 /**
- * Metadata Model
+ * Metadata Model.
  */
 class MetadataModel extends BaseMetadataModel implements ResourceModelInterface
 {
     /**
-     * Key should be less than 50 symbols and match following regular expression ([A-Za-z0-9_-]+)
+     * Key should be less than 50 symbols and match following regular expression ([A-Za-z0-9_-]+).
      *
      * @SA\Type("string")
      * @SA\SerializedName("key")
+     *
      * @var string|null
      */
     protected $key;
 
     /**
      * Value should be less than 1000 symbols, compatible with JSON string.
-     * Use JSON 'null' in order to remove metadata entry
+     * Use JSON 'null' in order to remove metadata entry.
      *
      * @SA\Type("string")
      * @SA\SerializedName("value")
+     *
      * @var string|null
      */
     protected $value;

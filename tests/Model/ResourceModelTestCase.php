@@ -1,6 +1,7 @@
 <?php
-/**
- * This file is part of the WrikePhpJmsserializer package.
+
+/*
+ * This file is part of the zibios/wrike-php-jmsserializer package.
  *
  * (c) Zbigniew Ślązak
  *
@@ -14,7 +15,7 @@ use Zibios\WrikePhpJmsserializer\Model\ResourceModelInterface;
 use Zibios\WrikePhpJmsserializer\Tests\TestCase;
 
 /**
- * Resource Model Test Case
+ * Resource Model Test Case.
  */
 abstract class ResourceModelTestCase extends TestCase
 {
@@ -42,7 +43,7 @@ abstract class ResourceModelTestCase extends TestCase
     }
 
     /**
-     * Test exception inheritance
+     * Test exception inheritance.
      */
     public function test_ResourceModel_ExtendProperClasses()
     {
@@ -51,7 +52,7 @@ abstract class ResourceModelTestCase extends TestCase
     }
 
     /**
-     * Test properties methods
+     * Test properties methods.
      */
     public function test_properPropertiesMethods()
     {
@@ -64,7 +65,7 @@ abstract class ResourceModelTestCase extends TestCase
     }
 
     /**
-     * Test properties methods
+     * Test properties methods.
      */
     public function test_getSetMethods()
     {

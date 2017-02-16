@@ -1,6 +1,7 @@
 <?php
-/**
- * This file is part of the WrikePhpJmsserializer package.
+
+/*
+ * This file is part of the zibios/wrike-php-jmsserializer package.
  *
  * (c) Zbigniew Ślązak
  *
@@ -11,21 +12,22 @@
 namespace Zibios\WrikePhpJmsserializer\Transformer\Response;
 
 use Psr\Http\Message\ResponseInterface;
-use Zibios\WrikePhpJmsserializer\Transformer\AbstractResponseTransformer;
 use Zibios\WrikePhpJmsserializer\Model\ResponseModelInterface;
+use Zibios\WrikePhpJmsserializer\Transformer\AbstractResponseTransformer;
 
 /**
- * Response Model Transformer
+ * Response Model Transformer.
  */
 class ResponseModelTransformer extends AbstractResponseTransformer
 {
     /**
      * @param ResponseInterface $response
-     * @param string $resourceClass
+     * @param string            $resourceClass
      *
-     * @return ResponseModelInterface
      * @throws \InvalidArgumentException
      * @throws \RuntimeException
+     *
+     * @return ResponseModelInterface
      */
     public function transform(ResponseInterface $response, $resourceClass)
     {

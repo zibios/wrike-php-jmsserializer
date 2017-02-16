@@ -1,6 +1,7 @@
 <?php
-/**
- * This file is part of the WrikePhpJmsserializer package.
+
+/*
+ * This file is part of the zibios/wrike-php-jmsserializer package.
  *
  * (c) Zbigniew Ślązak
  *
@@ -17,7 +18,7 @@ use Zibios\WrikePhpLibrary\Resource\ContactResource;
 use Zibios\WrikePhpLibrary\Transformer\ResponseTransformerInterface;
 
 /**
- * Abstract Response Transformer Test Case
+ * Abstract Response Transformer Test Case.
  */
 abstract class ResponseTransformerTestCase extends TestCase
 {
@@ -43,6 +44,7 @@ abstract class ResponseTransformerTestCase extends TestCase
             ->willReturn($bodyMock);
 
         $stdClass = new \stdClass();
+
         return [
             // [response, resourceClass, isValid]
             [$responseMock, ContactResource::class, true],
@@ -55,7 +57,7 @@ abstract class ResponseTransformerTestCase extends TestCase
     /**
      * @param mixed $response
      * @param mixed $resourceClass
-     * @param boolean $isValid
+     * @param bool  $isValid
      *
      * @dataProvider normalizeParamsProvider
      */

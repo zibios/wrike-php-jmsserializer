@@ -1,6 +1,7 @@
 <?php
-/**
- * This file is part of the WrikePhpJmsserializer package.
+
+/*
+ * This file is part of the zibios/wrike-php-jmsserializer package.
  *
  * (c) Zbigniew Ślązak
  *
@@ -15,123 +16,136 @@ use Zibios\WrikePhpJmsserializer\Model\ResourceModelInterface;
 use Zibios\WrikePhpLibrary\Model\Invitation\InvitationResourceModel as BaseInvitationResourceModel;
 
 /**
- * Invitation Resource Model
+ * Invitation Resource Model.
  */
 class InvitationResourceModel extends BaseInvitationResourceModel implements ResourceModelInterface
 {
     /**
-     * Invitation ID
+     * Invitation ID.
      *
      * Comment: Invitation ID
      *
      * @SA\Type("string")
      * @SA\SerializedName("id")
+     *
      * @var string|null
      */
     protected $id;
 
     /**
-     * Account ID
+     * Account ID.
      *
      * Comment: Account ID
      *
      * @SA\Type("string")
      * @SA\SerializedName("accountId")
+     *
      * @var string|null
      */
     protected $accountId;
 
     /**
-     * First name
+     * First name.
      *
      * @SA\Type("string")
      * @SA\SerializedName("firstName")
+     *
      * @var string|null
      */
     protected $firstName;
 
     /**
-     * Last name
+     * Last name.
      *
      * @SA\Type("string")
      * @SA\SerializedName("lastName")
+     *
      * @var string|null
      */
     protected $lastName;
 
     /**
-     * Invitation Title
+     * Invitation Title.
      *
      * @SA\Type("Email")
      * @SA\SerializedName("email")
+     *
      * @var string|null
      */
     protected $email;
 
     /**
-     * Status
+     * Status.
      *
      * Invitation status
      * Enum: Pending, Accepted, Declined, Cancelled
+     *
      * @see \Zibios\WrikePhpLibrary\Enum\InvitationStatusEnum
      *
      * @SA\Type("string")
      * @SA\SerializedName("status")
+     *
      * @var string|null
      */
     protected $status;
 
     /**
-     * Inviter Contact ID
+     * Inviter Contact ID.
      *
      * Comment: Contact ID
      *
      * @SA\Type("string")
      * @SA\SerializedName("inviterUserId")
+     *
      * @var string|null
      */
     protected $inviterUserId;
 
     /**
-     * Date when invitation was created
+     * Date when invitation was created.
      *
      * Format: yyyy-MM-dd'T'HH:mm:ss'Z'
      *
      * @SA\Type("DateTime<'Y-m-d\TH:i:s\Z'>")
      * @SA\SerializedName("invitationDate")
+     *
      * @var string|null
      */
     protected $invitationDate;
 
     /**
-     * Date when the invitation was resolved
+     * Date when the invitation was resolved.
      *
      * Format: yyyy-MM-dd'T'HH:mm:ss'Z'
      * Comment: Optional
      *
      * @SA\Type("DateTime<'Y-m-d\TH:i:s\Z'>")
      * @SA\SerializedName("resolvedDate")
+     *
      * @var string|null
      */
     protected $resolvedDate;
 
     /**
-     * Invited user role
+     * Invited user role.
      *
      * Enum: User, Collaborator
+     *
      * @see \Zibios\WrikePhpLibrary\Enum\UserRoleEnum
      *
      * @SA\Type("string")
      * @SA\SerializedName("role")
+     *
      * @var string|null
      */
     protected $role;
 
     /**
-     * Is user external
+     * Is user external.
      *
      * @SA\Type("boolean")
      * @SA\SerializedName("external")
+     *
      * @var bool|null
      */
     protected $external;

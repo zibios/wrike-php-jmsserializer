@@ -1,6 +1,7 @@
 <?php
-/**
- * This file is part of the WrikePhpJmsserializer package.
+
+/*
+ * This file is part of the zibios/wrike-php-jmsserializer package.
  *
  * (c) Zbigniew Ślązak
  *
@@ -15,24 +16,26 @@ use Zibios\WrikePhpJmsserializer\Model\ResponseModelInterface;
 use Zibios\WrikePhpLibrary\Model\Group\GroupResponseModel as BaseGroupResponseModel;
 
 /**
- * Group Response Model
+ * Group Response Model.
  */
 class GroupResponseModel extends BaseGroupResponseModel implements ResponseModelInterface
 {
     /**
-     * Kind of response
+     * Kind of response.
      *
      * @SA\Type("string")
      * @SA\SerializedName("kind")
+     *
      * @var string|null
      */
     protected $kind;
 
     /**
-     * Collection of response models
+     * Collection of response models.
      *
      * @SA\Type("array<Zibios\WrikePhpJmsserializer\Model\Group\GroupResourceModel>")
      * @SA\SerializedName("data")
+     *
      * @var array|GroupResourceModel]|null
      */
     protected $data;

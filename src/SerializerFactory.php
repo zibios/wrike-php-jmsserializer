@@ -1,6 +1,7 @@
 <?php
-/**
- * This file is part of the WrikePhpSdk package.
+
+/*
+ * This file is part of the zibios/wrike-php-jmsserializer package.
  *
  * (c) Zbigniew Ślązak
  *
@@ -15,7 +16,7 @@ use JMS\Serializer\SerializerBuilder;
 use JMS\Serializer\SerializerInterface;
 
 /**
- * Serializer Factory
+ * Serializer Factory.
  */
 class SerializerFactory
 {
@@ -26,7 +27,7 @@ class SerializerFactory
     {
         AnnotationRegistry::registerAutoloadNamespace(
             'JMS\Serializer\Annotation',
-            __DIR__ . '/../vendor/jms/serializer/src'
+            __DIR__.'/../vendor/jms/serializer/src'
         );
 
         return SerializerBuilder::create()->build();

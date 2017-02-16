@@ -1,6 +1,7 @@
 <?php
-/**
- * This file is part of the WrikePhpJmsserializer package.
+
+/*
+ * This file is part of the zibios/wrike-php-jmsserializer package.
  *
  * (c) Zbigniew Ślązak
  *
@@ -14,7 +15,7 @@ use Zibios\WrikePhpJmsserializer\Model\Group\GroupResponseModel;
 use Zibios\WrikePhpJmsserializer\Tests\Model\ResponseModelTestCase;
 
 /**
- * Group Response Model Test
+ * Group Response Model Test.
  */
 class GroupResponseModelTest extends ResponseModelTestCase
 {

@@ -1,6 +1,7 @@
 <?php
-/**
- * This file is part of the WrikePhpJmsserializer package.
+
+/*
+ * This file is part of the zibios/wrike-php-jmsserializer package.
  *
  * (c) Zbigniew Ślązak
  *
@@ -15,24 +16,26 @@ use Zibios\WrikePhpJmsserializer\Model\ResponseModelInterface;
 use Zibios\WrikePhpLibrary\Model\Invitation\InvitationResponseModel as BaseInvitationResponseModel;
 
 /**
- * Invitation Response Model
+ * Invitation Response Model.
  */
 class InvitationResponseModel extends BaseInvitationResponseModel implements ResponseModelInterface
 {
     /**
-     * Kind of response
+     * Kind of response.
      *
      * @SA\Type("string")
      * @SA\SerializedName("kind")
+     *
      * @var string|null
      */
     protected $kind;
 
     /**
-     * Collection of response models
+     * Collection of response models.
      *
      * @SA\Type("array<Zibios\WrikePhpJmsserializer\Model\Invitation\InvitationResourceModel>")
      * @SA\SerializedName("data")
+     *
      * @var array|InvitationResourceModel]|null
      */
     protected $data;

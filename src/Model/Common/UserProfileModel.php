@@ -1,6 +1,7 @@
 <?php
-/**
- * This file is part of the WrikePhpJmsserializer package.
+
+/*
+ * This file is part of the zibios/wrike-php-jmsserializer package.
  *
  * (c) Zbigniew Ślązak
  *
@@ -15,63 +16,70 @@ use Zibios\WrikePhpJmsserializer\Model\ResourceModelInterface;
 use Zibios\WrikePhpLibrary\Model\Common\UserProfileModel as BaseUserProfileModel;
 
 /**
- * User Profile Model
+ * User Profile Model.
  */
 class UserProfileModel extends BaseUserProfileModel implements ResourceModelInterface
 {
     /**
-     * Account ID
+     * Account ID.
      *
      * @SA\Type("string")
      * @SA\SerializedName("accountId")
+     *
      * @var string|null
      */
     protected $accountId;
 
     /**
-     * Email address associated with account
+     * Email address associated with account.
      *
      * @SA\Type("string")
      * @SA\SerializedName("email")
+     *
      * @var string|null
      */
     protected $email;
 
     /**
-     * Role in account
+     * Role in account.
      *
      * Enum: User, Collaborator
+     *
      * @see \Zibios\WrikePhpLibrary\Enum\UserRoleEnum
      *
      * @SA\Type("string")
      * @SA\SerializedName("role")
+     *
      * @var string|null
      */
     protected $role;
 
     /**
-     * Is user external
+     * Is user external.
      *
      * @SA\Type("boolean")
      * @SA\SerializedName("external")
+     *
      * @var bool|null
      */
     protected $external;
 
     /**
-     * Is user account admin
+     * Is user account admin.
      *
      * @SA\Type("boolean")
      * @SA\SerializedName("admin")
+     *
      * @var bool|null
      */
     protected $admin;
 
     /**
-     * Is user account owner
+     * Is user account owner.
      *
      * @SA\Type("boolean")
      * @SA\SerializedName("owner")
+     *
      * @var bool|null
      */
     protected $owner;
