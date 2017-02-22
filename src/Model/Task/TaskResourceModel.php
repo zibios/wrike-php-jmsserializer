@@ -19,6 +19,10 @@ use Zibios\WrikePhpJmsserializer\Model\ResourceModelInterface;
 
 /**
  * Task Resource Model.
+ *
+ * @SuppressWarnings(PHPMD.TooManyFields)
+ * @SuppressWarnings(PHPMD.ExcessiveClassComplexity)
+ * @SuppressWarnings(PHPMD.ExcessivePublicCount)
  */
 class TaskResourceModel implements ResourceModelInterface
 {

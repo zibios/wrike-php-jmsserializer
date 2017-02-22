@@ -19,6 +19,8 @@ use Zibios\WrikePhpJmsserializer\Model\ResourceModelInterface;
 
 /**
  * Folder Resource Model.
+ *
+ * @SuppressWarnings(PHPMD.TooManyFields)
  */
 class FolderResourceModel implements ResourceModelInterface
 {
