@@ -11,6 +11,7 @@
 
 namespace Zibios\WrikePhpJmsserializer\Model\Account;
 
+use JMS\Serializer\Annotation as SA;
 use Zibios\WrikePhpJmsserializer\Model\Common\MetadataModel;
 use Zibios\WrikePhpJmsserializer\Model\Common\SubscriptionModel;
 use Zibios\WrikePhpJmsserializer\Model\CustomField\CustomFieldResourceModel;

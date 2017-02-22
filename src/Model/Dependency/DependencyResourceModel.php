@@ -11,6 +11,7 @@
 
 namespace Zibios\WrikePhpJmsserializer\Model\Dependency;
 
+use JMS\Serializer\Annotation as SA;
 use Zibios\WrikePhpJmsserializer\Model\ResourceModelInterface;
 
 /**

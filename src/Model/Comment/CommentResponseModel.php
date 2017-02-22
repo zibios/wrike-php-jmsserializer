@@ -11,6 +11,7 @@
 
 namespace Zibios\WrikePhpJmsserializer\Model\Comment;
 
+use JMS\Serializer\Annotation as SA;
 use Zibios\WrikePhpJmsserializer\Model\ResponseModelInterface;
 
 /**

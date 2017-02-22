@@ -11,6 +11,7 @@
 
 namespace Zibios\WrikePhpJmsserializer\Model\Task;
 
+use JMS\Serializer\Annotation as SA;
 use Zibios\WrikePhpJmsserializer\Model\Common\CustomFieldModel;
 use Zibios\WrikePhpJmsserializer\Model\Common\MetadataModel;
 use Zibios\WrikePhpJmsserializer\Model\Common\TaskDatesModel;

@@ -11,6 +11,7 @@
 
 namespace Zibios\WrikePhpJmsserializer\Model\Id;
 
+use JMS\Serializer\Annotation as SA;
 use Zibios\WrikePhpJmsserializer\Model\ResponseModelInterface;
 
 /**
