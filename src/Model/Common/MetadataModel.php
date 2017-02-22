@@ -13,12 +13,11 @@ namespace Zibios\WrikePhpJmsserializer\Model\Common;
 
 use JMS\Serializer\Annotation as SA;
 use Zibios\WrikePhpJmsserializer\Model\ResourceModelInterface;
-use Zibios\WrikePhpLibrary\Model\Common\MetadataModel as BaseMetadataModel;
 
 /**
  * Metadata Model.
  */
-class MetadataModel extends BaseMetadataModel implements ResourceModelInterface
+class MetadataModel implements ResourceModelInterface
 {
     /**
      * Key should be less than 50 symbols and match following regular expression ([A-Za-z0-9_-]+).

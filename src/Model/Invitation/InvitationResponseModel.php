@@ -13,12 +13,11 @@ namespace Zibios\WrikePhpJmsserializer\Model\Invitation;
 
 use JMS\Serializer\Annotation as SA;
 use Zibios\WrikePhpJmsserializer\Model\ResponseModelInterface;
-use Zibios\WrikePhpLibrary\Model\Invitation\InvitationResponseModel as BaseInvitationResponseModel;
 
 /**
  * Invitation Response Model.
  */
-class InvitationResponseModel extends BaseInvitationResponseModel implements ResponseModelInterface
+class InvitationResponseModel implements ResponseModelInterface
 {
     /**
      * Kind of response.

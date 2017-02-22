@@ -11,11 +11,9 @@
 
 namespace Zibios\WrikePhpJmsserializer\Model;
 
-use Zibios\WrikePhpLibrary\Model\ResourceModelInterface as BaseResourceModelInterface;
-
 /**
  * Resource Model Interface.
  */
-interface ResourceModelInterface extends BaseResourceModelInterface
+interface ResourceModelInterface
 {
 }

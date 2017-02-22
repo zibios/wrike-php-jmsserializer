@@ -62,6 +62,15 @@ abstract class ResourceModelTestCase extends TestCase
             $setter = sprintf('set%s', ucwords($propertyName));
             self::assertTrue(method_exists($this->object, $setter), sprintf('"%s" not exist for "%s"', $setter, $this->sourceClass));
         }
+
+        $reflect = new \ReflectionClass($this->object);
+        $properties = $reflect->getProperties(\ReflectionProperty::IS_PUBLIC | \ReflectionProperty::IS_PROTECTED);
+        foreach ($properties as $property) {
+            self::assertContains(
+                $property->getName(),
+                $this->properties, sprintf('"%s" found in "%s" but not in tests', $property->getName(), $this->sourceClass)
+            );
+        }
     }
 
     /**

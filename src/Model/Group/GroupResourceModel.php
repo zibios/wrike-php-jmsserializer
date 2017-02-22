@@ -14,12 +14,11 @@ namespace Zibios\WrikePhpJmsserializer\Model\Group;
 use JMS\Serializer\Annotation as SA;
 use Zibios\WrikePhpJmsserializer\Model\Common\MetadataModel;
 use Zibios\WrikePhpJmsserializer\Model\ResourceModelInterface;
-use Zibios\WrikePhpLibrary\Model\Group\GroupResourceModel as BaseGroupResourceModel;
 
 /**
  * Group Resource Model.
  */
-class GroupResourceModel extends BaseGroupResourceModel implements ResourceModelInterface
+class GroupResourceModel implements ResourceModelInterface
 {
     /**
      * Contact ID.

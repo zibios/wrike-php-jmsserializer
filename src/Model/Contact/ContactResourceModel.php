@@ -15,14 +15,13 @@ use JMS\Serializer\Annotation as SA;
 use Zibios\WrikePhpJmsserializer\Model\Common\MetadataModel;
 use Zibios\WrikePhpJmsserializer\Model\Common\UserProfileModel;
 use Zibios\WrikePhpJmsserializer\Model\ResourceModelInterface;
-use Zibios\WrikePhpLibrary\Model\Contact\ContactResourceModel as BaseContactResourceModel;
 
 /**
  * Contact Resource Model.
  *
  * @SuppressWarnings(PHPMD.TooManyFields)
  */
-class ContactResourceModel extends BaseContactResourceModel implements ResourceModelInterface
+class ContactResourceModel implements ResourceModelInterface
 {
     /**
      * Contact ID.

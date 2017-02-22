@@ -13,12 +13,11 @@ namespace Zibios\WrikePhpJmsserializer\Model\Invitation;
 
 use JMS\Serializer\Annotation as SA;
 use Zibios\WrikePhpJmsserializer\Model\ResourceModelInterface;
-use Zibios\WrikePhpLibrary\Model\Invitation\InvitationResourceModel as BaseInvitationResourceModel;
 
 /**
  * Invitation Resource Model.
  */
-class InvitationResourceModel extends BaseInvitationResourceModel implements ResourceModelInterface
+class InvitationResourceModel implements ResourceModelInterface
 {
     /**
      * Invitation ID.
@@ -109,7 +108,7 @@ class InvitationResourceModel extends BaseInvitationResourceModel implements Res
      * @SA\Type("DateTime<'Y-m-d\TH:i:s\Z'>")
      * @SA\SerializedName("invitationDate")
      *
-     * @var string|null
+     * @var \DateTime|null
      */
     protected $invitationDate;
 
@@ -122,7 +121,7 @@ class InvitationResourceModel extends BaseInvitationResourceModel implements Res
      * @SA\Type("DateTime<'Y-m-d\TH:i:s\Z'>")
      * @SA\SerializedName("resolvedDate")
      *
-     * @var string|null
+     * @var \DateTime|null
      */
     protected $resolvedDate;
 
@@ -291,7 +290,7 @@ class InvitationResourceModel extends BaseInvitationResourceModel implements Res
     }
 
     /**
-     * @return null|string
+     * @return null|\DateTime
      */
     public function getInvitationDate()
     {
@@ -299,7 +298,7 @@ class InvitationResourceModel extends BaseInvitationResourceModel implements Res
     }
 
     /**
-     * @param null|string $invitationDate
+     * @param null|\DateTime|string $invitationDate
      *
      * @return $this
      */
@@ -311,7 +310,7 @@ class InvitationResourceModel extends BaseInvitationResourceModel implements Res
     }
 
     /**
-     * @return null|string
+     * @return null|\DateTime
      */
     public function getResolvedDate()
     {
@@ -319,7 +318,7 @@ class InvitationResourceModel extends BaseInvitationResourceModel implements Res
     }
 
     /**
-     * @param null|string $resolvedDate
+     * @param null|\DateTime|string $resolvedDate
      *
      * @return $this
      */

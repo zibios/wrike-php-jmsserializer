@@ -11,12 +11,10 @@
 
 namespace Zibios\WrikePhpJmsserializer\Model;
 
-use Zibios\WrikePhpLibrary\Model\ResponseModelInterface as BaseResponseModelInterface;
-
 /**
  * Response Model Interface.
  */
-interface ResponseModelInterface extends BaseResponseModelInterface
+interface ResponseModelInterface
 {
     /**
      * @return array|ResourceModelInterface[]|null

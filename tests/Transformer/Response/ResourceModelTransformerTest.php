@@ -20,6 +20,7 @@ use Zibios\WrikePhpJmsserializer\Model\User\UserResourceModel;
 use Zibios\WrikePhpJmsserializer\SerializerFactory;
 use Zibios\WrikePhpJmsserializer\Tests\Transformer\ResponseTransformerTestCase;
 use Zibios\WrikePhpJmsserializer\Transformer\Response\ResourceModelTransformer;
+use Zibios\WrikePhpLibrary\Api;
 use Zibios\WrikePhpLibrary\Resource\ContactResource;
 use Zibios\WrikePhpLibrary\Resource\GroupResource;
 use Zibios\WrikePhpLibrary\Resource\InvitationResource;
@@ -77,6 +78,39 @@ class ResourceModelTransformerTest extends ResponseTransformerTestCase
 
         foreach ($returnedResponse as $resourceModel) {
             self::assertInstanceOf($resourceModelClass, $resourceModel);
+        }
+    }
+
+    public function test_testNormalizeInstancesProviderCoverAllMethods()
+    {
+        $class = new \ReflectionClass(Api::class);
+        $expectedMethodNames = $class->getMethods(\ReflectionMethod::IS_PUBLIC);
+
+        $normalizeInstancesProviderArray = $this->normalizeInstancesProvider();
+        $coveredMethodNames = [];
+        foreach ($normalizeInstancesProviderArray as $normalizeInstancesProviderRow) {
+            $coveredClass = $normalizeInstancesProviderRow[0];
+            $coveredClassNameArray = explode('\\', $coveredClass);
+            $coveredClassName = end($coveredClassNameArray);
+            $coveredMethodName = sprintf('get%s', $coveredClassName);
+            $coveredMethodNames[$coveredMethodName] = $coveredMethodName;
+        }
+
+        $excludedMethods = [
+            '__construct',
+            'getBearerToken',
+            'setBearerToken',
+        ];
+
+        foreach ($expectedMethodNames as $expectedMethodName) {
+            if (in_array($expectedMethodName->getName(), $excludedMethods, true)) {
+                continue;
+            }
+            self::assertArrayHasKey(
+                $expectedMethodName->getName(),
+                $coveredMethodNames,
+                sprintf('%s not covered by tests', $expectedMethodName->getName())
+            );
         }
     }
 }
