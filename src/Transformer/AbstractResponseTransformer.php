@@ -48,6 +48,8 @@ use Zibios\WrikePhpLibrary\Transformer\AbstractResponseTransformer as BaseAbstra
 
 /**
  * Response Transformer Abstract.
+ *
+ * @SuppressWarnings(PHPMD.CouplingBetweenObjects)
  */
 abstract class AbstractResponseTransformer extends BaseAbstractResponseTransformer
 {
