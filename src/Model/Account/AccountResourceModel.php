@@ -76,10 +76,10 @@ class AccountResourceModel implements ResourceModelInterface
      *
      * @see \Zibios\WrikePhpLibrary\Enum\WeekDayEnum
      *
-     * @SA\Type("string")
+     * @SA\Type("array<string>")
      * @SA\SerializedName("workDays")
      *
-     * @var string|null
+     * @var array|string[]|null
      */
     protected $workDays;
 
@@ -258,7 +258,7 @@ class AccountResourceModel implements ResourceModelInterface
     }
 
     /**
-     * @return null|string
+     * @return null|array|string[]
      */
     public function getWorkDays()
     {
@@ -266,7 +266,7 @@ class AccountResourceModel implements ResourceModelInterface
     }
 
     /**
-     * @param null|string $workDays
+     * @param null|array|string[] $workDays
      *
      * @return $this
      */
