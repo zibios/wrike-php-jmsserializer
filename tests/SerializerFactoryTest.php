@@ -20,9 +20,9 @@ use Zibios\WrikePhpJmsserializer\SerializerFactory;
  */
 class SerializerFactoryTest extends TestCase
 {
-    public function test_createSerializer()
+    public function test_create()
     {
-        $serializer = SerializerFactory::createSerializer();
+        $serializer = SerializerFactory::create();
         self::assertInstanceOf(SerializerInterface::class, $serializer);
         self::assertInstanceOf(Serializer::class, $serializer);
     }

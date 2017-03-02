@@ -9,7 +9,7 @@
  * file that was distributed with this source code.
  */
 
-namespace Zibios\WrikePhpJmsserializer\Transformer;
+namespace Zibios\WrikePhpJmsserializer\Transformer\Response;
 
 use JMS\Serializer\SerializerInterface;
 use Zibios\WrikePhpJmsserializer\Model\Account\AccountResponseModel;
@@ -44,7 +44,7 @@ use Zibios\WrikePhpLibrary\Resource\TimelogResource;
 use Zibios\WrikePhpLibrary\Resource\UserResource;
 use Zibios\WrikePhpLibrary\Resource\VersionResource;
 use Zibios\WrikePhpLibrary\Resource\WorkflowResource;
-use Zibios\WrikePhpLibrary\Transformer\AbstractResponseTransformer as BaseAbstractResponseTransformer;
+use Zibios\WrikePhpLibrary\Transformer\Response\Psr\AbstractPsrResponseTransformer as BaseAbstractResponseTransformer;
 
 /**
  * Response Transformer Abstract.

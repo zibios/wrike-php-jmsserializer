@@ -30,7 +30,6 @@ use Zibios\WrikePhpJmsserializer\Model\User\UserResourceModel;
 use Zibios\WrikePhpJmsserializer\Model\Version\VersionResourceModel;
 use Zibios\WrikePhpJmsserializer\Model\Workflow\WorkflowResourceModel;
 use Zibios\WrikePhpJmsserializer\SerializerFactory;
-use Zibios\WrikePhpJmsserializer\Tests\Transformer\ResponseTransformerTestCase;
 use Zibios\WrikePhpJmsserializer\Transformer\Response\ResourceModelTransformer;
 use Zibios\WrikePhpLibrary\Api;
 use Zibios\WrikePhpLibrary\Resource\AccountResource;
@@ -59,7 +58,7 @@ class ResourceModelTransformerTest extends ResponseTransformerTestCase
 
     public function setUp()
     {
-        $serializer = SerializerFactory::createSerializer();
+        $serializer = SerializerFactory::create();
         $this->object = new ResourceModelTransformer($serializer);
     }
 
@@ -134,8 +133,9 @@ class ResourceModelTransformerTest extends ResponseTransformerTestCase
 
         $excludedMethods = [
             '__construct',
-            'getBearerToken',
-            'setBearerToken',
+            'recreateForNewAccessToken',
+            'recreateForNewApiExceptionTransformer',
+            'recreateForNewResponseTransformer',
         ];
 
         foreach ($expectedMethodNames as $expectedMethodName) {

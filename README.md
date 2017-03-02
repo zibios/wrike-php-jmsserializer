@@ -1,9 +1,7 @@
 Wrike PHP JMSSERIALIZER
 ================================
 
-**Proof of Concept - NOT YET USABLE!!!**
-
-**First usable version around 2017-03-01**
+**Alpha version, first usable version around 2017-03-06**
 
 Introduction
 ------------
@@ -52,6 +50,56 @@ Run PHPUnit tests:
 ./vendor/bin/phpunit
 ``` 
 
+Usage
+------------
+All \GuzzleHttp\Client methods plus methods for \Zibios\WrikePhpLibrary\Client\ClientInterface.
+
+```php
+/**
+ * Standard usage
+ */
+$serializer = SerializerFactory::create(); // \JMS\Serializer\SerializerInterface
+```
+
+```php
+$resourceModelTransformer = TransformerFactory::createResourceModelTransformer($serializer);
+
+/**
+ * @param ResponseInterface $response
+ * @param string            $resourceClass
+ *
+ * @return ResourceModelInterface
+ */
+$result = $resourceModelTransformer->transform($response, $resourceClass);
+
+$result => [
+    <ResourceModelInterface>,
+    <ResourceModelInterface>,
+    ...
+]
+```
+
+```php
+$responseModelTransformer = TransformerFactory::createResponseModelTransformer($serializer);
+
+/**
+ * @param ResponseInterface $response
+ * @param string            $resourceClass
+ *
+ * @return ResponseModelInterface
+ */
+$result = $responseModelTransformer->transform($response, $resourceClass);
+
+$result => ResponseModelInterface {
+    kind: <ResponseType>;
+    data:
+        [
+            <ResourceModelInterface>,
+            <ResourceModelInterface>,
+            ...
+        ]
+}
+```
 
 Reference
 ---------

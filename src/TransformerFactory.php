@@ -52,7 +52,7 @@ class TransformerFactory
     protected static function prepareSerializer(SerializerInterface $serializer = null)
     {
         if ($serializer === null) {
-            $serializer = SerializerFactory::createSerializer();
+            $serializer = SerializerFactory::create();
         }
 
         return $serializer;

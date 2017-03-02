@@ -23,7 +23,7 @@ class SerializerFactory
     /**
      * @return SerializerInterface
      */
-    public static function createSerializer()
+    public static function create()
     {
         AnnotationRegistry::registerAutoloadNamespace(
             'JMS\Serializer\Annotation',

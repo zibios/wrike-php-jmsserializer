@@ -28,7 +28,7 @@ class TransformerFactoryTest extends TestCase
         self::assertInstanceOf(ResponseTransformerInterface::class, $transformer);
         self::assertInstanceOf(ResourceModelTransformer::class, $transformer);
 
-        $serializer = SerializerFactory::createSerializer();
+        $serializer = SerializerFactory::create();
         $transformer = TransformerFactory::createResourceModelTransformer($serializer);
         self::assertInstanceOf(ResponseTransformerInterface::class, $transformer);
         self::assertInstanceOf(ResourceModelTransformer::class, $transformer);
@@ -40,7 +40,7 @@ class TransformerFactoryTest extends TestCase
         self::assertInstanceOf(ResponseTransformerInterface::class, $transformer);
         self::assertInstanceOf(ResponseModelTransformer::class, $transformer);
 
-        $serializer = SerializerFactory::createSerializer();
+        $serializer = SerializerFactory::create();
         $transformer = TransformerFactory::createResponseModelTransformer($serializer);
         self::assertInstanceOf(ResponseTransformerInterface::class, $transformer);
         self::assertInstanceOf(ResponseModelTransformer::class, $transformer);

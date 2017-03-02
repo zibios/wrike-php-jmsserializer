@@ -13,7 +13,6 @@ namespace Zibios\WrikePhpJmsserializer\Transformer\Response;
 
 use Psr\Http\Message\ResponseInterface;
 use Zibios\WrikePhpJmsserializer\Model\ResponseModelInterface;
-use Zibios\WrikePhpJmsserializer\Transformer\AbstractResponseTransformer;
 
 /**
  * Response Model Transformer.
@@ -29,7 +28,7 @@ class ResponseModelTransformer extends AbstractResponseTransformer
      *
      * @return ResponseModelInterface
      */
-    public function transform(ResponseInterface $response, $resourceClass)
+    public function transform($response, $resourceClass)
     {
         $stringBody = $this->transformToStringBody($response);
         /** @var ResponseModelInterface $responseModel */
