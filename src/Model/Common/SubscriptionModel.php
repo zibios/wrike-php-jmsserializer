@@ -47,7 +47,7 @@ class SubscriptionModel extends AbstractModel implements ResourceModelInterface
     /**
      * Limit of subscription users (available only to account admins).
      *
-     * @SA\Type("boolean")
+     * @SA\Type("integer")
      * @SA\SerializedName("userLimit")
      *
      * @var int|null
