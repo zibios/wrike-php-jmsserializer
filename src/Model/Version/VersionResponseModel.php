@@ -12,12 +12,13 @@
 namespace Zibios\WrikePhpJmsserializer\Model\Version;
 
 use JMS\Serializer\Annotation as SA;
+use Zibios\WrikePhpJmsserializer\Model\AbstractModel;
 use Zibios\WrikePhpJmsserializer\Model\ResponseModelInterface;
 
 /**
  * Version Response Model.
  */
-class VersionResponseModel implements ResponseModelInterface
+class VersionResponseModel extends AbstractModel implements ResponseModelInterface
 {
     /**
      * Kind of response.

@@ -12,12 +12,13 @@
 namespace Zibios\WrikePhpJmsserializer\Model\Folder;
 
 use JMS\Serializer\Annotation as SA;
+use Zibios\WrikePhpJmsserializer\Model\AbstractModel;
 use Zibios\WrikePhpJmsserializer\Model\ResponseModelInterface;
 
 /**
  * Folder Response Model.
  */
-class FolderResponseModel implements ResponseModelInterface
+class FolderResponseModel extends AbstractModel implements ResponseModelInterface
 {
     /**
      * Kind of response.

@@ -12,12 +12,13 @@
 namespace Zibios\WrikePhpJmsserializer\Model\Common;
 
 use JMS\Serializer\Annotation as SA;
+use Zibios\WrikePhpJmsserializer\Model\AbstractModel;
 use Zibios\WrikePhpJmsserializer\Model\ResourceModelInterface;
 
 /**
  * Project Model.
  */
-class ProjectModel implements ResourceModelInterface
+class ProjectModel extends AbstractModel implements ResourceModelInterface
 {
     /**
      * ID of user who created project.
@@ -66,7 +67,7 @@ class ProjectModel implements ResourceModelInterface
      * @SA\Type("DateTime<'Y-m-d'>")
      * @SA\SerializedName("startDate")
      *
-     * @var \DateTime|null
+     * @var string|null
      */
     protected $startDate;
 
@@ -79,7 +80,7 @@ class ProjectModel implements ResourceModelInterface
      * @SA\Type("DateTime<'Y-m-d'>")
      * @SA\SerializedName("endDate")
      *
-     * @var \DateTime|null
+     * @var string|null
      */
     protected $endDate;
 
@@ -89,10 +90,10 @@ class ProjectModel implements ResourceModelInterface
      * Format: yyyy-MM-dd'T'HH:mm:ss'Z'
      * Comment: Optional
      *
-     * @SA\Type("DateTime<'Y-m-d\TH:i:s\Z'>")
+     * @SA\Type("string")
      * @SA\SerializedName("createdDate")
      *
-     * @var \DateTime|null
+     * @var string|null
      */
     protected $createdDate;
 
@@ -102,10 +103,10 @@ class ProjectModel implements ResourceModelInterface
      * Format: yyyy-MM-dd'T'HH:mm:ss'Z'
      * Comment: Optional
      *
-     * @SA\Type("DateTime<'Y-m-d\TH:i:s\Z'>")
+     * @SA\Type("string")
      * @SA\SerializedName("completedDate")
      *
-     * @var \DateTime|null
+     * @var string|null
      */
     protected $completedDate;
 
@@ -170,7 +171,7 @@ class ProjectModel implements ResourceModelInterface
     }
 
     /**
-     * @return \DateTime|null
+     * @return string|null
      */
     public function getStartDate()
     {
@@ -178,7 +179,7 @@ class ProjectModel implements ResourceModelInterface
     }
 
     /**
-     * @param \DateTime|null $startDate
+     * @param string|null $startDate
      *
      * @return $this
      */
@@ -190,7 +191,7 @@ class ProjectModel implements ResourceModelInterface
     }
 
     /**
-     * @return \DateTime|null
+     * @return string|null
      */
     public function getEndDate()
     {
@@ -198,7 +199,7 @@ class ProjectModel implements ResourceModelInterface
     }
 
     /**
-     * @param \DateTime|null $endDate
+     * @param string|null $endDate
      *
      * @return $this
      */
@@ -210,7 +211,7 @@ class ProjectModel implements ResourceModelInterface
     }
 
     /**
-     * @return \DateTime|null
+     * @return string|null
      */
     public function getCreatedDate()
     {
@@ -218,7 +219,7 @@ class ProjectModel implements ResourceModelInterface
     }
 
     /**
-     * @param \DateTime|null $createdDate
+     * @param string|null $createdDate
      *
      * @return $this
      */
@@ -230,7 +231,7 @@ class ProjectModel implements ResourceModelInterface
     }
 
     /**
-     * @return \DateTime|null
+     * @return string|null
      */
     public function getCompletedDate()
     {
@@ -238,7 +239,7 @@ class ProjectModel implements ResourceModelInterface
     }
 
     /**
-     * @param \DateTime|null $completedDate
+     * @param string|null $completedDate
      *
      * @return $this
      */

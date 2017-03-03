@@ -12,6 +12,7 @@
 namespace Zibios\WrikePhpJmsserializer\Model\Folder;
 
 use JMS\Serializer\Annotation as SA;
+use Zibios\WrikePhpJmsserializer\Model\AbstractModel;
 use Zibios\WrikePhpJmsserializer\Model\Common\CustomFieldModel;
 use Zibios\WrikePhpJmsserializer\Model\Common\MetadataModel;
 use Zibios\WrikePhpJmsserializer\Model\Common\ProjectModel;
@@ -22,7 +23,7 @@ use Zibios\WrikePhpJmsserializer\Model\ResourceModelInterface;
  *
  * @SuppressWarnings(PHPMD.TooManyFields)
  */
-class FolderResourceModel implements ResourceModelInterface
+class FolderResourceModel extends AbstractModel implements ResourceModelInterface
 {
     /**
      * Folder ID.
@@ -63,10 +64,10 @@ class FolderResourceModel implements ResourceModelInterface
      *
      * Format: yyyy-MM-dd'T'HH:mm:ss'Z'
      *
-     * @SA\Type("DateTime<'Y-m-d\TH:i:s\Z'>")
+     * @SA\Type("string")
      * @SA\SerializedName("createdDate")
      *
-     * @var \DateTime|null
+     * @var string|null
      */
     protected $createdDate;
 
@@ -75,10 +76,10 @@ class FolderResourceModel implements ResourceModelInterface
      *
      * Format: yyyy-MM-dd'T'HH:mm:ss'Z'
      *
-     * @SA\Type("DateTime<'Y-m-d\TH:i:s\Z'>")
+     * @SA\Type("string")
      * @SA\SerializedName("updatedDate")
      *
-     * @var \DateTime|null
+     * @var string|null
      */
     protected $updatedDate;
 
@@ -333,7 +334,7 @@ class FolderResourceModel implements ResourceModelInterface
     }
 
     /**
-     * @return \DateTime|null
+     * @return string|null
      */
     public function getCreatedDate()
     {
@@ -341,7 +342,7 @@ class FolderResourceModel implements ResourceModelInterface
     }
 
     /**
-     * @param \DateTime|null $createdDate
+     * @param string|null $createdDate
      *
      * @return $this
      */
@@ -353,7 +354,7 @@ class FolderResourceModel implements ResourceModelInterface
     }
 
     /**
-     * @return \DateTime|null
+     * @return string|null
      */
     public function getUpdatedDate()
     {
@@ -361,7 +362,7 @@ class FolderResourceModel implements ResourceModelInterface
     }
 
     /**
-     * @param \DateTime|null $updatedDate
+     * @param string|null $updatedDate
      *
      * @return $this
      */

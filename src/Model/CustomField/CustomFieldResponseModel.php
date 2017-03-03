@@ -12,12 +12,13 @@
 namespace Zibios\WrikePhpJmsserializer\Model\CustomField;
 
 use JMS\Serializer\Annotation as SA;
+use Zibios\WrikePhpJmsserializer\Model\AbstractModel;
 use Zibios\WrikePhpJmsserializer\Model\ResponseModelInterface;
 
 /**
  * Custom Field Response Model.
  */
-class CustomFieldResponseModel implements ResponseModelInterface
+class CustomFieldResponseModel extends AbstractModel implements ResponseModelInterface
 {
     /**
      * Kind of response.

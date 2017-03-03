@@ -12,12 +12,13 @@
 namespace Zibios\WrikePhpJmsserializer\Model\Timelog;
 
 use JMS\Serializer\Annotation as SA;
+use Zibios\WrikePhpJmsserializer\Model\AbstractModel;
 use Zibios\WrikePhpJmsserializer\Model\ResponseModelInterface;
 
 /**
  * Timelog Response Model.
  */
-class TimelogResponseModel implements ResponseModelInterface
+class TimelogResponseModel extends AbstractModel implements ResponseModelInterface
 {
     /**
      * Kind of response.

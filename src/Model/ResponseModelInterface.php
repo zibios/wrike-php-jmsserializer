@@ -14,7 +14,7 @@ namespace Zibios\WrikePhpJmsserializer\Model;
 /**
  * Response Model Interface.
  */
-interface ResponseModelInterface
+interface ResponseModelInterface extends ModelInterface
 {
     /**
      * @return array|ResourceModelInterface[]|null

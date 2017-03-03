@@ -12,13 +12,14 @@
 namespace Zibios\WrikePhpJmsserializer\Model\Workflow;
 
 use JMS\Serializer\Annotation as SA;
+use Zibios\WrikePhpJmsserializer\Model\AbstractModel;
 use Zibios\WrikePhpJmsserializer\Model\Common\CustomStatusModel;
 use Zibios\WrikePhpJmsserializer\Model\ResourceModelInterface;
 
 /**
  * Workflow Resource Model.
  */
-class WorkflowResourceModel implements ResourceModelInterface
+class WorkflowResourceModel extends AbstractModel implements ResourceModelInterface
 {
     /**
      * Workflow ID.

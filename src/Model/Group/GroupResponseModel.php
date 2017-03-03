@@ -12,12 +12,13 @@
 namespace Zibios\WrikePhpJmsserializer\Model\Group;
 
 use JMS\Serializer\Annotation as SA;
+use Zibios\WrikePhpJmsserializer\Model\AbstractModel;
 use Zibios\WrikePhpJmsserializer\Model\ResponseModelInterface;
 
 /**
  * Group Response Model.
  */
-class GroupResponseModel implements ResponseModelInterface
+class GroupResponseModel extends AbstractModel implements ResponseModelInterface
 {
     /**
      * Kind of response.

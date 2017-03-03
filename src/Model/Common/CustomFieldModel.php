@@ -12,12 +12,13 @@
 namespace Zibios\WrikePhpJmsserializer\Model\Common;
 
 use JMS\Serializer\Annotation as SA;
+use Zibios\WrikePhpJmsserializer\Model\AbstractModel;
 use Zibios\WrikePhpJmsserializer\Model\ResourceModelInterface;
 
 /**
  * Custom Field Model.
  */
-class CustomFieldModel implements ResourceModelInterface
+class CustomFieldModel extends AbstractModel implements ResourceModelInterface
 {
     /**
      * Custom Field ID.

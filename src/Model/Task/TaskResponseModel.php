@@ -12,12 +12,13 @@
 namespace Zibios\WrikePhpJmsserializer\Model\Task;
 
 use JMS\Serializer\Annotation as SA;
+use Zibios\WrikePhpJmsserializer\Model\AbstractModel;
 use Zibios\WrikePhpJmsserializer\Model\ResponseModelInterface;
 
 /**
  * Task Response Model.
  */
-class TaskResponseModel implements ResponseModelInterface
+class TaskResponseModel extends AbstractModel implements ResponseModelInterface
 {
     /**
      * Kind of response.

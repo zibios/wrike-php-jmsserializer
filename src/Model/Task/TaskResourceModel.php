@@ -12,6 +12,7 @@
 namespace Zibios\WrikePhpJmsserializer\Model\Task;
 
 use JMS\Serializer\Annotation as SA;
+use Zibios\WrikePhpJmsserializer\Model\AbstractModel;
 use Zibios\WrikePhpJmsserializer\Model\Common\CustomFieldModel;
 use Zibios\WrikePhpJmsserializer\Model\Common\MetadataModel;
 use Zibios\WrikePhpJmsserializer\Model\Common\TaskDatesModel;
@@ -24,7 +25,7 @@ use Zibios\WrikePhpJmsserializer\Model\ResourceModelInterface;
  * @SuppressWarnings(PHPMD.ExcessiveClassComplexity)
  * @SuppressWarnings(PHPMD.ExcessivePublicCount)
  */
-class TaskResourceModel implements ResourceModelInterface
+class TaskResourceModel extends AbstractModel implements ResourceModelInterface
 {
     /**
      * Task ID.
@@ -169,10 +170,10 @@ class TaskResourceModel implements ResourceModelInterface
      *
      * Format: yyyy-MM-dd'T'HH:mm:ss'Z'
      *
-     * @SA\Type("DateTime<'Y-m-d\TH:i:s\Z'>")
+     * @SA\Type("string")
      * @SA\SerializedName("createdDate")
      *
-     * @var \DateTime|null
+     * @var string|null
      */
     protected $createdDate;
 
@@ -181,10 +182,10 @@ class TaskResourceModel implements ResourceModelInterface
      *
      * Format: yyyy-MM-dd'T'HH:mm:ss'Z'
      *
-     * @SA\Type("DateTime<'Y-m-d\TH:i:s\Z'>")
+     * @SA\Type("string")
      * @SA\SerializedName("updatedDate")
      *
-     * @var \DateTime|null
+     * @var string|null
      */
     protected $updatedDate;
 
@@ -193,10 +194,10 @@ class TaskResourceModel implements ResourceModelInterface
      *
      * Format: yyyy-MM-dd'T'HH:mm:ss'Z'
      *
-     * @SA\Type("DateTime<'Y-m-d\TH:i:s\Z'>")
+     * @SA\Type("string")
      * @SA\SerializedName("completedDate")
      *
-     * @var \DateTime|null
+     * @var string|null
      */
     protected $completedDate;
 
@@ -614,7 +615,7 @@ class TaskResourceModel implements ResourceModelInterface
     }
 
     /**
-     * @return \DateTime|null
+     * @return string|null
      */
     public function getCreatedDate()
     {
@@ -622,7 +623,7 @@ class TaskResourceModel implements ResourceModelInterface
     }
 
     /**
-     * @param \DateTime|null $createdDate
+     * @param string|null $createdDate
      *
      * @return $this
      */
@@ -634,7 +635,7 @@ class TaskResourceModel implements ResourceModelInterface
     }
 
     /**
-     * @return \DateTime|null
+     * @return string|null
      */
     public function getUpdatedDate()
     {
@@ -642,7 +643,7 @@ class TaskResourceModel implements ResourceModelInterface
     }
 
     /**
-     * @param \DateTime|null $updatedDate
+     * @param string|null $updatedDate
      *
      * @return $this
      */
@@ -654,7 +655,7 @@ class TaskResourceModel implements ResourceModelInterface
     }
 
     /**
-     * @return \DateTime|null
+     * @return string|null
      */
     public function getCompletedDate()
     {
@@ -662,7 +663,7 @@ class TaskResourceModel implements ResourceModelInterface
     }
 
     /**
-     * @param \DateTime|null $completedDate
+     * @param string|null $completedDate
      *
      * @return $this
      */

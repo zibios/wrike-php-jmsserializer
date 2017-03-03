@@ -12,12 +12,13 @@
 namespace Zibios\WrikePhpJmsserializer\Model\Common;
 
 use JMS\Serializer\Annotation as SA;
+use Zibios\WrikePhpJmsserializer\Model\AbstractModel;
 use Zibios\WrikePhpJmsserializer\Model\ResourceModelInterface;
 
 /**
  * User Profile Model.
  */
-class UserProfileModel implements ResourceModelInterface
+class UserProfileModel extends AbstractModel implements ResourceModelInterface
 {
     /**
      * Account ID.

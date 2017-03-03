@@ -12,12 +12,13 @@
 namespace Zibios\WrikePhpJmsserializer\Model\User;
 
 use JMS\Serializer\Annotation as SA;
+use Zibios\WrikePhpJmsserializer\Model\AbstractModel;
 use Zibios\WrikePhpJmsserializer\Model\ResponseModelInterface;
 
 /**
  * User Response Model.
  */
-class UserResponseModel implements ResponseModelInterface
+class UserResponseModel extends AbstractModel implements ResponseModelInterface
 {
     /**
      * Kind of response.

@@ -12,8 +12,17 @@
 namespace Zibios\WrikePhpJmsserializer\Model;
 
 /**
- * Resource Model Interface.
+ * Model Interface.
  */
-interface ResourceModelInterface extends ModelInterface
+interface ModelInterface
 {
+    /**
+     * @return array
+     */
+    public function toArray();
+
+    /**
+     * @return string
+     */
+    public function toJson();
 }

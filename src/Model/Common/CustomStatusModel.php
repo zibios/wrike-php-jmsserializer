@@ -12,12 +12,13 @@
 namespace Zibios\WrikePhpJmsserializer\Model\Common;
 
 use JMS\Serializer\Annotation as SA;
+use Zibios\WrikePhpJmsserializer\Model\AbstractModel;
 use Zibios\WrikePhpJmsserializer\Model\ResourceModelInterface;
 
 /**
  * Custom Status Model.
  */
-class CustomStatusModel implements ResourceModelInterface
+class CustomStatusModel extends AbstractModel implements ResourceModelInterface
 {
     /**
      * Custom status ID.

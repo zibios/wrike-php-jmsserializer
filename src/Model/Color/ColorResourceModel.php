@@ -12,12 +12,13 @@
 namespace Zibios\WrikePhpJmsserializer\Model\Color;
 
 use JMS\Serializer\Annotation as SA;
+use Zibios\WrikePhpJmsserializer\Model\AbstractModel;
 use Zibios\WrikePhpJmsserializer\Model\ResourceModelInterface;
 
 /**
  * Color Resource Model.
  */
-class ColorResourceModel implements ResourceModelInterface
+class ColorResourceModel extends AbstractModel implements ResourceModelInterface
 {
     /**
      * Color name.

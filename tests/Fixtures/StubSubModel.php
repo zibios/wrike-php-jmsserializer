@@ -9,40 +9,27 @@
  * file that was distributed with this source code.
  */
 
-namespace Zibios\WrikePhpJmsserializer\Model\Common;
+namespace Zibios\WrikePhpJmsserializer\Tests\Fixtures;
 
-use JMS\Serializer\Annotation as SA;
 use Zibios\WrikePhpJmsserializer\Model\AbstractModel;
-use Zibios\WrikePhpJmsserializer\Model\ResourceModelInterface;
 
 /**
- * Metadata Model.
+ * Stub Sub Model.
  */
-class MetadataModel extends AbstractModel implements ResourceModelInterface
+class StubSubModel extends AbstractModel
 {
     /**
-     * Key should be less than 50 symbols and match following regular expression ([A-Za-z0-9_-]+).
-     *
-     * @SA\Type("string")
-     * @SA\SerializedName("key")
-     *
-     * @var string|null
+     * @var mixed
      */
     protected $key;
 
     /**
-     * Value should be less than 1000 symbols, compatible with JSON string.
-     * Use JSON 'null' in order to remove metadata entry.
-     *
-     * @SA\Type("string")
-     * @SA\SerializedName("value")
-     *
-     * @var string|null
+     * @var mixed
      */
     protected $value;
 
     /**
-     * @return null|string
+     * @return mixed
      */
     public function getKey()
     {
@@ -50,7 +37,7 @@ class MetadataModel extends AbstractModel implements ResourceModelInterface
     }
 
     /**
-     * @param null|string $key
+     * @param mixed $key
      *
      * @return $this
      */
@@ -62,7 +49,7 @@ class MetadataModel extends AbstractModel implements ResourceModelInterface
     }
 
     /**
-     * @return null|string
+     * @return mixed
      */
     public function getValue()
     {
@@ -70,7 +57,7 @@ class MetadataModel extends AbstractModel implements ResourceModelInterface
     }
 
     /**
-     * @param null|string $value
+     * @param mixed $value
      *
      * @return $this
      */

@@ -12,12 +12,13 @@
 namespace Zibios\WrikePhpJmsserializer\Model\Id;
 
 use JMS\Serializer\Annotation as SA;
+use Zibios\WrikePhpJmsserializer\Model\AbstractModel;
 use Zibios\WrikePhpJmsserializer\Model\ResourceModelInterface;
 
 /**
  * Id Resource Model.
  */
-class IdResourceModel implements ResourceModelInterface
+class IdResourceModel extends AbstractModel implements ResourceModelInterface
 {
     /**
      * API v3 ID.

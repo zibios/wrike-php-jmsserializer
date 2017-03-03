@@ -12,12 +12,13 @@
 namespace Zibios\WrikePhpJmsserializer\Model\Comment;
 
 use JMS\Serializer\Annotation as SA;
+use Zibios\WrikePhpJmsserializer\Model\AbstractModel;
 use Zibios\WrikePhpJmsserializer\Model\ResourceModelInterface;
 
 /**
  * Comment Resource Model.
  */
-class CommentResourceModel implements ResourceModelInterface
+class CommentResourceModel extends AbstractModel implements ResourceModelInterface
 {
     /**
      * Comment ID.
@@ -58,10 +59,10 @@ class CommentResourceModel implements ResourceModelInterface
      *
      * Format: yyyy-MM-dd'T'HH:mm:ss'Z'
      *
-     * @SA\Type("DateTime<'Y-m-d\TH:i:s\Z'>")
+     * @SA\Type("string")
      * @SA\SerializedName("createdDate")
      *
-     * @var \DateTime|null
+     * @var string|null
      */
     protected $createdDate;
 
@@ -146,7 +147,7 @@ class CommentResourceModel implements ResourceModelInterface
     }
 
     /**
-     * @return \DateTime|null
+     * @return string|null
      */
     public function getCreatedDate()
     {
@@ -154,7 +155,7 @@ class CommentResourceModel implements ResourceModelInterface
     }
 
     /**
-     * @param \DateTime|null $createdDate
+     * @param string|null $createdDate
      *
      * @return $this
      */

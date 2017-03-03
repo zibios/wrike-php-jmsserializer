@@ -12,12 +12,13 @@
 namespace Zibios\WrikePhpJmsserializer\Model\Comment;
 
 use JMS\Serializer\Annotation as SA;
+use Zibios\WrikePhpJmsserializer\Model\AbstractModel;
 use Zibios\WrikePhpJmsserializer\Model\ResponseModelInterface;
 
 /**
  * Comment Response Model.
  */
-class CommentResponseModel implements ResponseModelInterface
+class CommentResponseModel extends AbstractModel implements ResponseModelInterface
 {
     /**
      * Kind of response.

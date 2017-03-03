@@ -11,6 +11,8 @@
 
 namespace Zibios\WrikePhpJmsserializer\Tests\Model;
 
+use Zibios\WrikePhpJmsserializer\Model\AbstractModel;
+use Zibios\WrikePhpJmsserializer\Model\ModelInterface;
 use Zibios\WrikePhpJmsserializer\Model\ResourceModelInterface;
 use Zibios\WrikePhpJmsserializer\Tests\TestCase;
 
@@ -49,6 +51,8 @@ abstract class ResourceModelTestCase extends TestCase
     {
         self::assertInstanceOf(ResourceModelInterface::class, $this->object, sprintf('"%s" should extend "%s"', get_class($this->object), ResourceModelInterface::class));
         self::assertInstanceOf($this->sourceClass, $this->object, sprintf('"%s" should extend "%s"', get_class($this->object), $this->sourceClass));
+        self::assertInstanceOf(AbstractModel::class, $this->object, sprintf('"%s" should extend "%s"', get_class($this->object), AbstractModel::class));
+        self::assertInstanceOf(ModelInterface::class, $this->object, sprintf('"%s" should extend "%s"', get_class($this->object), ModelInterface::class));
     }
 
     /**
@@ -83,9 +87,14 @@ abstract class ResourceModelTestCase extends TestCase
         foreach ($this->properties as $propertyName) {
             $getter = sprintf('get%s', ucwords($propertyName));
             self::assertNull($this->object->{$getter}());
+            $arrayData = $this->object->toArray();
+            self::assertNull($arrayData[$propertyName]);
+
             $setter = sprintf('set%s', ucwords($propertyName));
             self::assertSame($this->object->{$setter}($testValue), $this->object);
             self::assertSame($testValue, $this->object->{$getter}());
+            $arrayData = $this->object->toArray();
+            self::assertSame($testValue, $arrayData[$propertyName]);
         }
     }
 }

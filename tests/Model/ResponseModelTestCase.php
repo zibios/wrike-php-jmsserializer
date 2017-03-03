@@ -11,6 +11,8 @@
 
 namespace Zibios\WrikePhpJmsserializer\Tests\Model;
 
+use Zibios\WrikePhpJmsserializer\Model\AbstractModel;
+use Zibios\WrikePhpJmsserializer\Model\ModelInterface;
 use Zibios\WrikePhpJmsserializer\Model\ResponseModelInterface;
 use Zibios\WrikePhpJmsserializer\Tests\TestCase;
 
@@ -51,6 +53,9 @@ abstract class ResponseModelTestCase extends TestCase
     public function test_ExtendProperClasses()
     {
         self::assertInstanceOf(ResponseModelInterface::class, $this->object, sprintf('"%s" should extend "%s"', get_class($this->object), ResponseModelInterface::class));
+        self::assertInstanceOf($this->sourceClass, $this->object, sprintf('"%s" should extend "%s"', get_class($this->object), $this->sourceClass));
+        self::assertInstanceOf(AbstractModel::class, $this->object, sprintf('"%s" should extend "%s"', get_class($this->object), AbstractModel::class));
+        self::assertInstanceOf(ModelInterface::class, $this->object, sprintf('"%s" should extend "%s"', get_class($this->object), ModelInterface::class));
     }
 
     /**

@@ -12,12 +12,13 @@
 namespace Zibios\WrikePhpJmsserializer\Model\Common;
 
 use JMS\Serializer\Annotation as SA;
+use Zibios\WrikePhpJmsserializer\Model\AbstractModel;
 use Zibios\WrikePhpJmsserializer\Model\ResourceModelInterface;
 
 /**
  * Avatar Model.
  */
-class AvatarModel implements ResourceModelInterface
+class AvatarModel extends AbstractModel implements ResourceModelInterface
 {
     /**
      * Group letters (2 symbols max), ex. ZS.

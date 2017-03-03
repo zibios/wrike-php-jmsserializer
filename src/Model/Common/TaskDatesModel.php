@@ -12,12 +12,13 @@
 namespace Zibios\WrikePhpJmsserializer\Model\Common;
 
 use JMS\Serializer\Annotation as SA;
+use Zibios\WrikePhpJmsserializer\Model\AbstractModel;
 use Zibios\WrikePhpJmsserializer\Model\ResourceModelInterface;
 
 /**
  * Task Dates Model.
  */
-class TaskDatesModel implements ResourceModelInterface
+class TaskDatesModel extends AbstractModel implements ResourceModelInterface
 {
     /**
      * Type.
@@ -48,10 +49,10 @@ class TaskDatesModel implements ResourceModelInterface
      *
      * Format: yyyy-MM-dd'T'HH:mm:ss ('T'HH:mm:ss is optional)
      *
-     * @SA\Type("DateTime<'Y-m-d\TH:i:s\Z'>")
+     * @SA\Type("string")
      * @SA\SerializedName("start")
      *
-     * @var \DateTime|null
+     * @var string|null
      */
     protected $start;
 
@@ -60,10 +61,10 @@ class TaskDatesModel implements ResourceModelInterface
      *
      * Format: yyyy-MM-dd'T'HH:mm:ss ('T'HH:mm:ss is optional)
      *
-     * @SA\Type("DateTime<'Y-m-d\TH:i:s\Z'>")
+     * @SA\Type("string")
      * @SA\SerializedName("due")
      *
-     * @var \DateTime|null
+     * @var string|null
      */
     protected $due;
 
@@ -120,7 +121,7 @@ class TaskDatesModel implements ResourceModelInterface
     }
 
     /**
-     * @return \DateTime|null
+     * @return string|null
      */
     public function getStart()
     {
@@ -128,7 +129,7 @@ class TaskDatesModel implements ResourceModelInterface
     }
 
     /**
-     * @param \DateTime|null $start
+     * @param string|null $start
      *
      * @return $this
      */
@@ -140,7 +141,7 @@ class TaskDatesModel implements ResourceModelInterface
     }
 
     /**
-     * @return \DateTime|null
+     * @return string|null
      */
     public function getDue()
     {
@@ -148,7 +149,7 @@ class TaskDatesModel implements ResourceModelInterface
     }
 
     /**
-     * @param \DateTime|null $due
+     * @param string|null $due
      *
      * @return $this
      */

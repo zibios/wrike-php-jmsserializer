@@ -12,12 +12,13 @@
 namespace Zibios\WrikePhpJmsserializer\Model\Dependency;
 
 use JMS\Serializer\Annotation as SA;
+use Zibios\WrikePhpJmsserializer\Model\AbstractModel;
 use Zibios\WrikePhpJmsserializer\Model\ResourceModelInterface;
 
 /**
  * Dependency Resource Model.
  */
-class DependencyResourceModel implements ResourceModelInterface
+class DependencyResourceModel extends AbstractModel implements ResourceModelInterface
 {
     /**
      * Dependency ID.

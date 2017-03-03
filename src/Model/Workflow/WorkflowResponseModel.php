@@ -12,12 +12,13 @@
 namespace Zibios\WrikePhpJmsserializer\Model\Workflow;
 
 use JMS\Serializer\Annotation as SA;
+use Zibios\WrikePhpJmsserializer\Model\AbstractModel;
 use Zibios\WrikePhpJmsserializer\Model\ResponseModelInterface;
 
 /**
  * Workflow Response Model.
  */
-class WorkflowResponseModel implements ResponseModelInterface
+class WorkflowResponseModel extends AbstractModel implements ResponseModelInterface
 {
     /**
      * Kind of response.

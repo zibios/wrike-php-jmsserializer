@@ -12,12 +12,13 @@
 namespace Zibios\WrikePhpJmsserializer\Model\Timelog;
 
 use JMS\Serializer\Annotation as SA;
+use Zibios\WrikePhpJmsserializer\Model\AbstractModel;
 use Zibios\WrikePhpJmsserializer\Model\ResourceModelInterface;
 
 /**
  * Timelog Resource Model.
  */
-class TimelogResourceModel implements ResourceModelInterface
+class TimelogResourceModel extends AbstractModel implements ResourceModelInterface
 {
     /**
      * Timelog Entry ID.
@@ -70,10 +71,10 @@ class TimelogResourceModel implements ResourceModelInterface
      *
      * Format: yyyy-MM-dd'T'HH:mm:ss'Z'
      *
-     * @SA\Type("DateTime<'Y-m-d\TH:i:s\Z'>")
+     * @SA\Type("string")
      * @SA\SerializedName("createdDate")
      *
-     * @var \DateTime|null
+     * @var string|null
      */
     protected $createdDate;
 
@@ -85,7 +86,7 @@ class TimelogResourceModel implements ResourceModelInterface
      * @SA\Type("DateTime<'Y-m-d'>")
      * @SA\SerializedName("trackedDate")
      *
-     * @var \DateTime|null
+     * @var string|null
      */
     protected $trackedDate;
 
@@ -180,7 +181,7 @@ class TimelogResourceModel implements ResourceModelInterface
     }
 
     /**
-     * @return \DateTime|null
+     * @return string|null
      */
     public function getCreatedDate()
     {
@@ -188,7 +189,7 @@ class TimelogResourceModel implements ResourceModelInterface
     }
 
     /**
-     * @param \DateTime|null $createdDate
+     * @param string|null $createdDate
      *
      * @return $this
      */
@@ -200,7 +201,7 @@ class TimelogResourceModel implements ResourceModelInterface
     }
 
     /**
-     * @return \DateTime|null
+     * @return string|null
      */
     public function getTrackedDate()
     {
@@ -208,7 +209,7 @@ class TimelogResourceModel implements ResourceModelInterface
     }
 
     /**
-     * @param \DateTime|null $trackedDate
+     * @param string|null $trackedDate
      *
      * @return $this
      */

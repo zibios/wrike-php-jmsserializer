@@ -12,12 +12,13 @@
 namespace Zibios\WrikePhpJmsserializer\Model\Invitation;
 
 use JMS\Serializer\Annotation as SA;
+use Zibios\WrikePhpJmsserializer\Model\AbstractModel;
 use Zibios\WrikePhpJmsserializer\Model\ResourceModelInterface;
 
 /**
  * Invitation Resource Model.
  */
-class InvitationResourceModel implements ResourceModelInterface
+class InvitationResourceModel extends AbstractModel implements ResourceModelInterface
 {
     /**
      * Invitation ID.
@@ -105,10 +106,10 @@ class InvitationResourceModel implements ResourceModelInterface
      *
      * Format: yyyy-MM-dd'T'HH:mm:ss'Z'
      *
-     * @SA\Type("DateTime<'Y-m-d\TH:i:s\Z'>")
+     * @SA\Type("string")
      * @SA\SerializedName("invitationDate")
      *
-     * @var \DateTime|null
+     * @var string|null
      */
     protected $invitationDate;
 
@@ -118,10 +119,10 @@ class InvitationResourceModel implements ResourceModelInterface
      * Format: yyyy-MM-dd'T'HH:mm:ss'Z'
      * Comment: Optional
      *
-     * @SA\Type("DateTime<'Y-m-d\TH:i:s\Z'>")
+     * @SA\Type("string")
      * @SA\SerializedName("resolvedDate")
      *
-     * @var \DateTime|null
+     * @var string|null
      */
     protected $resolvedDate;
 
@@ -290,7 +291,7 @@ class InvitationResourceModel implements ResourceModelInterface
     }
 
     /**
-     * @return null|\DateTime
+     * @return null|string
      */
     public function getInvitationDate()
     {
@@ -298,7 +299,7 @@ class InvitationResourceModel implements ResourceModelInterface
     }
 
     /**
-     * @param null|\DateTime|string $invitationDate
+     * @param null|string|string $invitationDate
      *
      * @return $this
      */
@@ -310,7 +311,7 @@ class InvitationResourceModel implements ResourceModelInterface
     }
 
     /**
-     * @return null|\DateTime
+     * @return null|string
      */
     public function getResolvedDate()
     {
@@ -318,7 +319,7 @@ class InvitationResourceModel implements ResourceModelInterface
     }
 
     /**
-     * @param null|\DateTime|string $resolvedDate
+     * @param null|string|string $resolvedDate
      *
      * @return $this
      */

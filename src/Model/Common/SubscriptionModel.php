@@ -12,12 +12,13 @@
 namespace Zibios\WrikePhpJmsserializer\Model\Common;
 
 use JMS\Serializer\Annotation as SA;
+use Zibios\WrikePhpJmsserializer\Model\AbstractModel;
 use Zibios\WrikePhpJmsserializer\Model\ResourceModelInterface;
 
 /**
  * Subscription Model.
  */
-class SubscriptionModel implements ResourceModelInterface
+class SubscriptionModel extends AbstractModel implements ResourceModelInterface
 {
     /**
      * Subscription type.

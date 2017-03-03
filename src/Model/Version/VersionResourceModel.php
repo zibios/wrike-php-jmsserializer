@@ -12,12 +12,13 @@
 namespace Zibios\WrikePhpJmsserializer\Model\Version;
 
 use JMS\Serializer\Annotation as SA;
+use Zibios\WrikePhpJmsserializer\Model\AbstractModel;
 use Zibios\WrikePhpJmsserializer\Model\ResourceModelInterface;
 
 /**
  * Version Resource Model.
  */
-class VersionResourceModel implements ResourceModelInterface
+class VersionResourceModel extends AbstractModel implements ResourceModelInterface
 {
     /**
      * Major version number.

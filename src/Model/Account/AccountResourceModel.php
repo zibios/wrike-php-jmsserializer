@@ -12,6 +12,7 @@
 namespace Zibios\WrikePhpJmsserializer\Model\Account;
 
 use JMS\Serializer\Annotation as SA;
+use Zibios\WrikePhpJmsserializer\Model\AbstractModel;
 use Zibios\WrikePhpJmsserializer\Model\Common\MetadataModel;
 use Zibios\WrikePhpJmsserializer\Model\Common\SubscriptionModel;
 use Zibios\WrikePhpJmsserializer\Model\CustomField\CustomFieldResourceModel;
@@ -20,7 +21,7 @@ use Zibios\WrikePhpJmsserializer\Model\ResourceModelInterface;
 /**
  * Account Resource Model.
  */
-class AccountResourceModel implements ResourceModelInterface
+class AccountResourceModel extends AbstractModel implements ResourceModelInterface
 {
     /**
      * Account ID.
@@ -118,10 +119,10 @@ class AccountResourceModel implements ResourceModelInterface
      *
      * Format: yyyy-MM-dd'T'HH:mm:ss'Z'
      *
-     * @SA\Type("DateTime<'Y-m-d\TH:i:s\Z'>")
+     * @SA\Type("string")
      * @SA\SerializedName("createdDate")
      *
-     * @var \DateTime|null
+     * @var string|null
      */
     protected $createdDate;
 
@@ -170,10 +171,10 @@ class AccountResourceModel implements ResourceModelInterface
      *
      * Format: yyyy-MM-dd'T'HH:mm:ss'Z'
      *
-     * @SA\Type("DateTime<'Y-m-d\TH:i:s\Z'>")
+     * @SA\Type("string")
      * @SA\SerializedName("joinedDate")
      *
-     * @var \DateTime|null
+     * @var string|null
      */
     protected $joinedDate;
 
@@ -318,7 +319,7 @@ class AccountResourceModel implements ResourceModelInterface
     }
 
     /**
-     * @return \DateTime|null
+     * @return string|null
      */
     public function getCreatedDate()
     {
@@ -326,7 +327,7 @@ class AccountResourceModel implements ResourceModelInterface
     }
 
     /**
-     * @param \DateTime|null $createdDate
+     * @param string|null $createdDate
      *
      * @return $this
      */
@@ -398,7 +399,7 @@ class AccountResourceModel implements ResourceModelInterface
     }
 
     /**
-     * @return \DateTime|null
+     * @return string|null
      */
     public function getJoinedDate()
     {
@@ -406,7 +407,7 @@ class AccountResourceModel implements ResourceModelInterface
     }
 
     /**
-     * @param \DateTime|null $joinedDate
+     * @param string|null $joinedDate
      *
      * @return $this
      */

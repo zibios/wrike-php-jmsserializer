@@ -12,6 +12,7 @@
 namespace Zibios\WrikePhpJmsserializer\Model\Contact;
 
 use JMS\Serializer\Annotation as SA;
+use Zibios\WrikePhpJmsserializer\Model\AbstractModel;
 use Zibios\WrikePhpJmsserializer\Model\Common\MetadataModel;
 use Zibios\WrikePhpJmsserializer\Model\Common\UserProfileModel;
 use Zibios\WrikePhpJmsserializer\Model\ResourceModelInterface;
@@ -21,7 +22,7 @@ use Zibios\WrikePhpJmsserializer\Model\ResourceModelInterface;
  *
  * @SuppressWarnings(PHPMD.TooManyFields)
  */
-class ContactResourceModel implements ResourceModelInterface
+class ContactResourceModel extends AbstractModel implements ResourceModelInterface
 {
     /**
      * Contact ID.

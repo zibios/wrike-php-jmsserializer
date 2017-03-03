@@ -12,12 +12,13 @@
 namespace Zibios\WrikePhpJmsserializer\Model\Color;
 
 use JMS\Serializer\Annotation as SA;
+use Zibios\WrikePhpJmsserializer\Model\AbstractModel;
 use Zibios\WrikePhpJmsserializer\Model\ResponseModelInterface;
 
 /**
  * Color Response Model.
  */
-class ColorResponseModel implements ResponseModelInterface
+class ColorResponseModel extends AbstractModel implements ResponseModelInterface
 {
     /**
      * Kind of response.

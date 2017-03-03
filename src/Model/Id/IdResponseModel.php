@@ -12,12 +12,13 @@
 namespace Zibios\WrikePhpJmsserializer\Model\Id;
 
 use JMS\Serializer\Annotation as SA;
+use Zibios\WrikePhpJmsserializer\Model\AbstractModel;
 use Zibios\WrikePhpJmsserializer\Model\ResponseModelInterface;
 
 /**
  * Id Response Model.
  */
-class IdResponseModel implements ResponseModelInterface
+class IdResponseModel extends AbstractModel implements ResponseModelInterface
 {
     /**
      * Kind of response.
