@@ -32,6 +32,7 @@ class CommentResourceModelTest extends ResourceModelTestCase
         'authorId',
         'text',
         'createdDate',
+        'updatedDate',
         'taskId',
         'folderId',
     ];

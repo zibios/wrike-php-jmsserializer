@@ -67,6 +67,18 @@ class CommentResourceModel extends AbstractModel implements ResourceModelInterfa
     protected $createdDate;
 
     /**
+     * Updated date.
+     *
+     * Format: yyyy-MM-dd'T'HH:mm:ss'Z'
+     *
+     * @SA\Type("string")
+     * @SA\SerializedName("updatedDate")
+     *
+     * @var string|null
+     */
+    protected $updatedDate;
+
+    /**
      * ID of related task. Only one of taskId/folderId fields is present.
      *
      * @SA\Type("string")
@@ -162,6 +174,26 @@ class CommentResourceModel extends AbstractModel implements ResourceModelInterfa
     public function setCreatedDate($createdDate)
     {
         $this->createdDate = $createdDate;
+
+        return $this;
+    }
+
+    /**
+     * @return null|string
+     */
+    public function getUpdatedDate()
+    {
+        return $this->updatedDate;
+    }
+
+    /**
+     * @param null|string $updatedDate
+     *
+     * @return $this
+     */
+    public function setUpdatedDate($updatedDate)
+    {
+        $this->updatedDate = $updatedDate;
 
         return $this;
     }
