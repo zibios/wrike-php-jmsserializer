@@ -122,7 +122,7 @@ class GroupResourceModel extends AbstractModel implements ResourceModelInterface
      *
      * Comment: Optional
      *
-     * @SA\Type("array<Zibios\WrikePhpJmsserializer\MetadataModel\Common\MetadataModel>")
+     * @SA\Type("array<Zibios\WrikePhpJmsserializer\Model\Common\MetadataModel>")
      * @SA\SerializedName("metadata")
      *
      * @var array|MetadataModel[]|null
