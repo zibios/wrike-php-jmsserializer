@@ -67,7 +67,7 @@ class InvitationResourceModel extends AbstractModel implements ResourceModelInte
     /**
      * Invitation Title.
      *
-     * @SA\Type("Email")
+     * @SA\Type("string")
      * @SA\SerializedName("email")
      *
      * @var string|null
