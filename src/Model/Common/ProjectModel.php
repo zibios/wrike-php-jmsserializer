@@ -64,7 +64,7 @@ class ProjectModel extends AbstractModel implements ResourceModelInterface
      * Format: yyyy-MM-dd
      * Comment: Optional
      *
-     * @SA\Type("DateTime<'Y-m-d'>")
+     * @SA\Type("string")
      * @SA\SerializedName("startDate")
      *
      * @var string|null
@@ -77,7 +77,7 @@ class ProjectModel extends AbstractModel implements ResourceModelInterface
      * Format: yyyy-MM-dd
      * Comment: Optional
      *
-     * @SA\Type("DateTime<'Y-m-d'>")
+     * @SA\Type("string")
      * @SA\SerializedName("endDate")
      *
      * @var string|null

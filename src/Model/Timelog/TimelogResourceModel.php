@@ -83,7 +83,7 @@ class TimelogResourceModel extends AbstractModel implements ResourceModelInterfa
      *
      * Format: yyyy-MM-dd
      *
-     * @SA\Type("DateTime<'Y-m-d'>")
+     * @SA\Type("string")
      * @SA\SerializedName("trackedDate")
      *
      * @var string|null
