@@ -102,7 +102,7 @@ class CommentResourceModel extends AbstractModel implements ResourceModelInterfa
      * Attachment ID list.
      *
      * @SA\Type("array<string>")
-     * @SA\SerializedName("folderId")
+     * @SA\SerializedName("attachmentIds")
      *
      * @var array|string[]|null
      */
