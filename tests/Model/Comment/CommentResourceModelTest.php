@@ -35,5 +35,6 @@ class CommentResourceModelTest extends ResourceModelTestCase
         'updatedDate',
         'taskId',
         'folderId',
+        'attachmentIds',
     ];
 }

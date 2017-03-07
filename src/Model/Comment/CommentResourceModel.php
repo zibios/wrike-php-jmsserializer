@@ -99,6 +99,16 @@ class CommentResourceModel extends AbstractModel implements ResourceModelInterfa
     protected $folderId;
 
     /**
+     * Attachment ID list.
+     *
+     * @SA\Type("array<string>")
+     * @SA\SerializedName("folderId")
+     *
+     * @var array|string[]|null
+     */
+    protected $attachmentIds;
+
+    /**
      * @return null|string
      */
     public function getId()
@@ -234,6 +244,26 @@ class CommentResourceModel extends AbstractModel implements ResourceModelInterfa
     public function setFolderId($folderId)
     {
         $this->folderId = $folderId;
+
+        return $this;
+    }
+
+    /**
+     * @return array|null|string[]
+     */
+    public function getAttachmentIds()
+    {
+        return $this->attachmentIds;
+    }
+
+    /**
+     * @param array|null|string[] $attachmentIds
+     *
+     * @return $this
+     */
+    public function setAttachmentIds($attachmentIds)
+    {
+        $this->attachmentIds = $attachmentIds;
 
         return $this;
     }
