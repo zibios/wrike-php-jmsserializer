@@ -1,7 +1,7 @@
 Wrike PHP JMSSERIALIZER
 ================================
 
-**Alpha version, first usable version around 2017-03-06**
+**Current version: 0.1.0, version 1.0.0 around 2017-04-01**
 
 Introduction
 ------------
@@ -9,6 +9,7 @@ Introduction
 **This is response transformer plugin for [Wrike PHP Library](https://github.com/zibios/wrike-php-library).**
 
 For general purpose please check [full configured Wrike PHP SDK](https://github.com/zibios/wrike-php-sdk).
+For Symfony2 / Symfony3 please check full configured [Wrike bundle](https://github.com/zibios/wrike-bundle).
 For none standard purposes please check [generic Wrike PHP Library](https://github.com/zibios/wrike-php-library).
 
 Project status
@@ -106,7 +107,7 @@ Reference
 
 [Wrike PHP SDK](https://github.com/zibios/wrike-php-sdk)
 
-Official [Wrike API Documentation](https://developers.wrike.com/documentation/api/overview)
+[Symfony bundle](https://github.com/zibios/wrike-bundle)
 
 License
 -------
