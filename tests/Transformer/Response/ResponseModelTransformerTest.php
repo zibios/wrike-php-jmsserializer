@@ -154,6 +154,7 @@ class ResponseModelTransformerTest extends ResponseTransformerTestCase
             'recreateForNewAccessToken',
             'recreateForNewApiExceptionTransformer',
             'recreateForNewResponseTransformer',
+            'normalizeParams',
         ];
 
         foreach ($expectedMethodNames as $expectedMethodName) {

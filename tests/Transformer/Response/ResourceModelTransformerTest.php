@@ -136,6 +136,7 @@ class ResourceModelTransformerTest extends ResponseTransformerTestCase
             'recreateForNewAccessToken',
             'recreateForNewApiExceptionTransformer',
             'recreateForNewResponseTransformer',
+            'normalizeParams',
         ];
 
         foreach ($expectedMethodNames as $expectedMethodName) {
