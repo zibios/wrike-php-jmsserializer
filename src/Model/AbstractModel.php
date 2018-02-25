@@ -13,6 +13,8 @@ namespace Zibios\WrikePhpJmsserializer\Model;
 
 /**
  * Abstract Model.
+ *
+ * @SuppressWarnings(PHPMD.NumberOfChildren)
  */
 abstract class AbstractModel implements ModelInterface
 {
