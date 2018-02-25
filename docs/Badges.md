@@ -36,11 +36,11 @@ Collection of all badges for package
 [![Code Climate](https://codeclimate.com/github/zibios/wrike-php-jmsserializer/badges/gpa.svg)](https://codeclimate.com/github/zibios/wrike-php-jmsserializer)
 [![Test Coverage](https://codeclimate.com/github/zibios/wrike-php-jmsserializer/badges/coverage.svg)](https://codeclimate.com/github/zibios/wrike-php-jmsserializer/coverage)
 
-**HHVM**
-[![HHVM Status](http://hhvm.h4cc.de/badge/zibios/wrike-php-jmsserializer.svg)](http://hhvm.h4cc.de/package/zibios/wrike-php-jmsserializer)
-
 **Coveralls**
 [![Coverage Status](https://coveralls.io/repos/github/zibios/wrike-php-jmsserializer/badge.svg)](https://coveralls.io/github/zibios/wrike-php-jmsserializer)
 
 **StyleCI**
 [![StyleCI](https://styleci.io/repos/81218726/shield?branch=master)](https://styleci.io/repos/81218726)
+
+**VersionEye**
+[![VersionEye](http://php-eye.com/badge/zibios/wrike-php-jmsserializer/tested.svg)](http://php-eye.com/package/zibios/wrike-php-jmsserializer)
