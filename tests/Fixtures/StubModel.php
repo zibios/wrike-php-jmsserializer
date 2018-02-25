@@ -24,7 +24,7 @@ class StubModel extends AbstractModel
     protected $id;
 
     /**
-     * @var mixed
+     * @var string
      */
     protected $name;
 
@@ -59,7 +59,7 @@ class StubModel extends AbstractModel
     }
 
     /**
-     * @return mixed
+     * @return string
      */
     public function getName()
     {
@@ -67,7 +67,7 @@ class StubModel extends AbstractModel
     }
 
     /**
-     * @param mixed $name
+     * @param string $name
      *
      * @return $this
      */

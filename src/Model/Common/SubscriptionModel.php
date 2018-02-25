@@ -55,7 +55,7 @@ class SubscriptionModel extends AbstractModel implements ResourceModelInterface
     protected $userLimit;
 
     /**
-     * @return mixed
+     * @return null|string
      */
     public function getType()
     {
@@ -63,7 +63,7 @@ class SubscriptionModel extends AbstractModel implements ResourceModelInterface
     }
 
     /**
-     * @param mixed $type
+     * @param null|string $type
      *
      * @return $this
      */
@@ -75,7 +75,7 @@ class SubscriptionModel extends AbstractModel implements ResourceModelInterface
     }
 
     /**
-     * @return mixed
+     * @return bool|null
      */
     public function getPaid()
     {
@@ -83,7 +83,7 @@ class SubscriptionModel extends AbstractModel implements ResourceModelInterface
     }
 
     /**
-     * @param mixed $paid
+     * @param bool|null $paid
      *
      * @return $this
      */
@@ -95,7 +95,7 @@ class SubscriptionModel extends AbstractModel implements ResourceModelInterface
     }
 
     /**
-     * @return mixed
+     * @return int|null
      */
     public function getUserLimit()
     {
@@ -103,7 +103,7 @@ class SubscriptionModel extends AbstractModel implements ResourceModelInterface
     }
 
     /**
-     * @param mixed $userLimit
+     * @param int|null $userLimit
      *
      * @return $this
      */

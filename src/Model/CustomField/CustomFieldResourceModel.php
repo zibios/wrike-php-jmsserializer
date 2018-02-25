@@ -90,7 +90,7 @@ class CustomFieldResourceModel extends AbstractModel implements ResourceModelInt
     protected $deleted;
 
     /**
-     * @return mixed
+     * @return string|null
      */
     public function getId()
     {
@@ -98,7 +98,7 @@ class CustomFieldResourceModel extends AbstractModel implements ResourceModelInt
     }
 
     /**
-     * @param mixed $id
+     * @param string|null $id
      *
      * @return $this
      */
@@ -110,7 +110,7 @@ class CustomFieldResourceModel extends AbstractModel implements ResourceModelInt
     }
 
     /**
-     * @return mixed
+     * @return string|null
      */
     public function getAccountId()
     {
@@ -118,7 +118,7 @@ class CustomFieldResourceModel extends AbstractModel implements ResourceModelInt
     }
 
     /**
-     * @param mixed $accountId
+     * @param string|null $accountId
      *
      * @return $this
      */
@@ -130,7 +130,7 @@ class CustomFieldResourceModel extends AbstractModel implements ResourceModelInt
     }
 
     /**
-     * @return mixed
+     * @return string|null
      */
     public function getTitle()
     {
@@ -138,7 +138,7 @@ class CustomFieldResourceModel extends AbstractModel implements ResourceModelInt
     }
 
     /**
-     * @param mixed $title
+     * @param string|null $title
      *
      * @return $this
      */
@@ -150,7 +150,7 @@ class CustomFieldResourceModel extends AbstractModel implements ResourceModelInt
     }
 
     /**
-     * @return mixed
+     * @return null|string
      */
     public function getType()
     {
@@ -158,7 +158,7 @@ class CustomFieldResourceModel extends AbstractModel implements ResourceModelInt
     }
 
     /**
-     * @param mixed $type
+     * @param null|string $type
      *
      * @return $this
      */
@@ -170,7 +170,7 @@ class CustomFieldResourceModel extends AbstractModel implements ResourceModelInt
     }
 
     /**
-     * @return mixed
+     * @return array|string[]|null
      */
     public function getSharedIds()
     {
@@ -178,7 +178,7 @@ class CustomFieldResourceModel extends AbstractModel implements ResourceModelInt
     }
 
     /**
-     * @param mixed $sharedIds
+     * @param array|string[]|null $sharedIds
      *
      * @return $this
      */
@@ -190,7 +190,7 @@ class CustomFieldResourceModel extends AbstractModel implements ResourceModelInt
     }
 
     /**
-     * @return mixed
+     * @return bool|null
      */
     public function getDeleted()
     {
@@ -198,7 +198,7 @@ class CustomFieldResourceModel extends AbstractModel implements ResourceModelInt
     }
 
     /**
-     * @param mixed $deleted
+     * @param bool|null $deleted
      *
      * @return $this
      */
