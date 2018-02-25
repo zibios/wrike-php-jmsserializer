@@ -66,6 +66,7 @@ abstract class ResponseTransformerTestCase extends TestCase
         $exceptionOccurred = false;
         $exceptionClass = '';
         $exceptionMessage = '';
+
         try {
             $this->object->transform($response, $resourceClass);
         } catch (\Throwable $t) {
@@ -76,10 +77,10 @@ abstract class ResponseTransformerTestCase extends TestCase
             $exceptionMessage = $e->getMessage();
         }
 
-        if ($isValid === false) {
+        if (false === $isValid) {
             self::assertTrue($exceptionOccurred, 'Exception should be thrown');
         }
-        if ($isValid === true) {
+        if (true === $isValid) {
             self::assertFalse($exceptionOccurred, sprintf('Exception should not be thrown, "%s" "%s" occurred', $exceptionClass, $exceptionMessage));
         }
     }

@@ -102,7 +102,7 @@ abstract class AbstractResponseTransformer extends BaseAbstractResponseTransform
      */
     protected function getModelClassForResource($resourceClass)
     {
-        if (array_key_exists($resourceClass, $this->getModelClasses()) === false) {
+        if (false === array_key_exists($resourceClass, $this->getModelClasses())) {
             throw new \InvalidArgumentException(sprintf('"%s" class not supported', $resourceClass));
         }
 

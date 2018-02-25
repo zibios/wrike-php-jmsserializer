@@ -51,7 +51,7 @@ class TransformerFactory
      */
     protected static function prepareSerializer(SerializerInterface $serializer = null)
     {
-        if ($serializer === null) {
+        if (null === $serializer) {
             $serializer = SerializerFactory::create();
         }
 
