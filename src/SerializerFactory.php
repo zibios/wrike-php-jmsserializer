@@ -25,10 +25,7 @@ class SerializerFactory
      */
     public static function create()
     {
-        AnnotationRegistry::registerAutoloadNamespace(
-            'JMS\Serializer\Annotation',
-            __DIR__.'/../vendor/jms/serializer/src'
-        );
+        AnnotationRegistry::registerLoader('class_exists');
 
         return SerializerBuilder::create()->build();
     }
