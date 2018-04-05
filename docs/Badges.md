@@ -44,3 +44,6 @@ Collection of all badges for package
 
 **VersionEye**
 [![VersionEye](http://php-eye.com/badge/zibios/wrike-php-jmsserializer/tested.svg)](http://php-eye.com/package/zibios/wrike-php-jmsserializer)
+
+**BestPractices**
+[![CII Best Practices](https://bestpractices.coreinfrastructure.org/projects/1692/badge)](https://bestpractices.coreinfrastructure.org/projects/1692)
