@@ -33,7 +33,7 @@ Project status
 [![Codacy Badge](https://api.codacy.com/project/badge/Grade/8d37c4ffd44647dba3f4e82dae223481)](https://www.codacy.com/app/zibios/wrike-php-jmsserializer)
 [![Code Climate Maintainability](https://api.codeclimate.com/v1/badges/047196b5262f5adb15df/maintainability)](https://codeclimate.com/github/zibios/wrike-php-jmsserializer/maintainability)
 
-**Branch 'master'**
+**Branch 'v1.x'**
 
 [![Scrutinizer Code Quality](https://scrutinizer-ci.com/g/zibios/wrike-php-jmsserializer/badges/quality-score.png?b=v1.x)](https://scrutinizer-ci.com/g/zibios/wrike-php-jmsserializer/?branch=v1.x)
 [![Scrutinizer Build Status](https://scrutinizer-ci.com/g/zibios/wrike-php-jmsserializer/badges/build.png?b=v1.x)](https://scrutinizer-ci.com/g/zibios/wrike-php-jmsserializer/build-status/v1.x)
