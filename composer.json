@@ -1,5 +1,5 @@
 {
-    "name": "zibios/wrike-php-jmsserializer",
+    "name": "zack-carlson/wrike-php-jmsserializer",
     "description": "Response transformer adapter for Wrike PHP Library, based on JMS Serializer package.",
     "keywords": ["wrike", "wrike.com", "api", "sdk", "library", "jmsserializer", "php"],
     "type": "library",
@@ -10,12 +10,12 @@
         }
     ],
     "require": {
-        "php": ">=5.5,<7.2",
-        "zibios/wrike-php-library": "^1.0",
+        "php": ">=5.5",
+        "zack-carlson/wrike-php-library": "dev-master",
         "jms/serializer": "^1.4"
     },
     "require-dev": {
-        "phpunit/phpunit": ">=4.0,<6.0"
+        "phpunit/phpunit": ">=4.0"
     },
     "autoload": {
         "psr-4": {"Zibios\\WrikePhpJmsserializer\\": "src/"}
